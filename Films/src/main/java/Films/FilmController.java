@@ -25,13 +25,12 @@ class FilmController {
     // Aggregate root
     // tag::get-aggregate-root[]
 
-    //Returns all film records
+    // Returns all film records
     @GetMapping("/allFilms")
     List<Film> all() {
         return repository.findAll();
     }
 
-    
     // Returns the all titles and IDs
     @GetMapping("/titles")
     public Map<String, Object> allTitles() {
@@ -98,7 +97,8 @@ class FilmController {
         for (Film film : films) {
             response.put("Title: ", film.getTitle());
         }
-        return response;
+        return response
+                .orElseThrow(() -> new FilmNotFoundException(year));
     }
 
     // Get film titles by director
@@ -110,7 +110,8 @@ class FilmController {
         for (Film film : films) {
             response.put("Title: ", film.getTitle());
         }
-        return response;
+        return response
+                .orElseThrow(() -> new FilmNotFoundException(director));
     }
 
     /*

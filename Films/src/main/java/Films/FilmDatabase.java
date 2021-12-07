@@ -46,5 +46,9 @@ public class FilmDatabase {
 
             //films.forEach(System.out::println);
         }
+        catch (FileNotFoundException e) {
+            System.out.println("An error occurred in uploading the csv file.");
+            e.printStackTrace();
+        }
     }
 }
