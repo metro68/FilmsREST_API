@@ -25,13 +25,14 @@ class FilmController {
     // Aggregate root
     // tag::get-aggregate-root[]
 
-    // Returns the all titles and IDs
-
+    //Returns all film records
     @GetMapping("/allFilms")
     List<Film> all() {
         return repository.findAll();
     }
 
+    
+    // Returns the all titles and IDs
     @GetMapping("/titles")
     public Map<String, Object> allTitles() {
 
