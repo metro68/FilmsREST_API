@@ -44,7 +44,7 @@ public class Film {
   @CsvBindByName
   private boolean awards;
 
-  Film() {
+  Film(Film film) {
   }
 
   Film(Date year, int length, String title, String subject, String actor, String actress, String director,
