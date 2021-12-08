@@ -97,8 +97,7 @@ class FilmController {
         for (Film film : films) {
             response.put("Title: ", film.getTitle());
         }
-        return response
-                .orElseThrow(() -> new FilmNotFoundException(year));
+        return response;
     }
 
     // Get film titles by director
@@ -110,8 +109,7 @@ class FilmController {
         for (Film film : films) {
             response.put("Title: ", film.getTitle());
         }
-        return response
-                .orElseThrow(() -> new FilmNotFoundException(director));
+        return response;
     }
 
     /*

@@ -18,7 +18,6 @@ import java.util.List;
 @Configuration
 public class FilmDatabase {
 
-    @Autowired
     private static FilmRepository repository;
 
     public static void main(String[] args) throws IOException {
@@ -46,7 +45,7 @@ public class FilmDatabase {
 
             //films.forEach(System.out::println);
         }
-        catch (FileNotFoundException e) {
+        catch (IOException e) {
             System.out.println("An error occurred in uploading the csv file.");
             e.printStackTrace();
         }
