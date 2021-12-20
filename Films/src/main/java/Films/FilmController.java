@@ -1,10 +1,11 @@
 package Films;
 
-import java.util.Date;
+import java.time.LocalDate;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
+import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -15,8 +16,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/api/films")
 class FilmController {
 
-    private final FilmRepository repository;
-
+    private FilmRepository repository;
+    //Constructor injection used here rather than @autowired injection, constructor is recommended by spring
     FilmController(FilmRepository repository) {
 
         this.repository = repository;
@@ -31,15 +32,15 @@ class FilmController {
         return repository.findAll();
     }
 
-    // Returns the all titles and IDs
+    // Returns all titles and IDs
     @GetMapping("/titles")
     public Map<String, Object> allTitles() {
 
         List<Film> films = repository.findAll();
         Map<String, Object> response = new LinkedHashMap<String, Object>();
         for (Film film : films) {
-            response.put("id: ", film.getId());
-            response.put("title: ", film.getTitle());
+            response.put("id:", film.getId());
+            response.put("title:", film.getTitle());
         }
         return response;
     }
@@ -59,7 +60,7 @@ class FilmController {
         List<Film> films = repository.findAll();
         Map<String, Object> response = new LinkedHashMap<String, Object>();
         for (Film film : films) {
-            response.put("Actor: ", film.getActor());
+            response.put("Actor:", film.getActor());
         }
         return response;
     }
@@ -71,7 +72,7 @@ class FilmController {
         List<Film> films = repository.findAll();
         Map<String, Object> response = new LinkedHashMap<String, Object>();
         for (Film film : films) {
-            response.put("Actress: ", film.getActress());
+            response.put("Actress:", film.getActress());
         }
         return response;
     }
@@ -83,19 +84,19 @@ class FilmController {
         List<Film> films = repository.findAll();
         Map<String, Object> response = new LinkedHashMap<String, Object>();
         for (Film film : films) {
-            response.put("Director: ", film.getDirector());
+            response.put("Director:", film.getDirector());
         }
         return response;
     }
 
-    // Get film titles by date
-    @GetMapping("/date/{YYYY-MM-DD}")
-    public Map<String, Object> getFilmsByDate(@PathVariable Date year) {
+    // Get film titles by date. Date format handled in application.properties file
+    @GetMapping("/date/{year}")
+    public Map<String, Object> getFilmsByDate(@PathVariable LocalDate year) {
 
         List<Film> films = repository.findAllByYear(year);
         Map<String, Object> response = new LinkedHashMap<String, Object>();
         for (Film film : films) {
-            response.put("Title: ", film.getTitle());
+            response.put("Title:", film.getTitle());
         }
         return response;
     }
@@ -107,7 +108,7 @@ class FilmController {
         List<Film> films = repository.findAllByDirector(director);
         Map<String, Object> response = new LinkedHashMap<String, Object>();
         for (Film film : films) {
-            response.put("Title: ", film.getTitle());
+            response.put("Title:", film.getTitle());
         }
         return response;
     }

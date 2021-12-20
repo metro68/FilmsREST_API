@@ -4,7 +4,8 @@ import com.opencsv.bean.CsvToBean;
 import com.opencsv.bean.CsvToBeanBuilder;
 import com.opencsv.bean.HeaderColumnNameMappingStrategy;
 
-import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 import java.io.BufferedReader;
@@ -18,36 +19,40 @@ import java.util.List;
 @Configuration
 public class FilmDatabase {
 
-    private static FilmRepository repository;
+    // private static FilmRepository repository;
 
-    public static void main(String[] args) throws IOException {
+    // public static void main(String[] args) throws IOException { /*There should
+    // only be one main method in tht application*/
 
-        String fileName = "demo/src/main/resources/example_data1.csv";
-        Path myPath = Paths.get(fileName);
+    @Bean
+    CommandLineRunner initDatabase(FilmRepository repository) {
+        return (args) -> {
 
-        try (BufferedReader br = Files.newBufferedReader(myPath,
-                StandardCharsets.UTF_8)) {
+            String fileName = "Films/src/main/resources/example_data1.csv";
+            Path myPath = Paths.get(fileName);
 
-            HeaderColumnNameMappingStrategy<Film> strategy
-                    = new HeaderColumnNameMappingStrategy<>();
-            strategy.setType(Film.class);
+            try (BufferedReader br = Files.newBufferedReader(myPath,
+                    StandardCharsets.UTF_8)) {
 
-            CsvToBean<Film> csvToBean = new CsvToBeanBuilder<Film>(br)
-                    .withMappingStrategy(strategy)
-                    .withIgnoreLeadingWhiteSpace(true)
-                    .build();
+                HeaderColumnNameMappingStrategy<Film> strategy = new HeaderColumnNameMappingStrategy<>();
+                strategy.setType(Film.class);
 
-            List<Film> films = csvToBean.parse();
+                CsvToBean<Film> csvToBean = new CsvToBeanBuilder<Film>(br)
+                        .withMappingStrategy(strategy)
+                        .withIgnoreLeadingWhiteSpace(true)
+                        .build();
 
-            for (Film film: films){
-                repository.save(new Film(film));
+                List<Film> films = csvToBean.parse();
+
+                for (Film film : films) {
+                    repository.save(new Film(film));
+                }
+
+                // films.forEach(System.out::println);
+            } catch (IOException e) {
+                System.out.println("An error occurred in uploading the csv file.");
+                e.printStackTrace();
             }
-
-            //films.forEach(System.out::println);
-        }
-        catch (IOException e) {
-            System.out.println("An error occurred in uploading the csv file.");
-            e.printStackTrace();
-        }
+        };//An anonymous class. it enables you to declare and instantiate a class at the same time
     }
 }

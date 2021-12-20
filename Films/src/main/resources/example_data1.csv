@@ -1,15 +1,15 @@
 Year,Length,Title,Subject,Actor,Actress,Director,Popularity,Awards
-01/01/1990,111,Tie Me Up! Tie Me Down!,Comedy,"Banderas, Antonio","Abril, Victoria","Almodóvar, Pedro",68,No
-01/01/1991,113,High Heels,Comedy,"Bosé, Miguel","Abril, Victoria","Almodóvar, Pedro",68,No
+01/01/1990,111,Tie Me Up! Tie Me Down!,Comedy,"Banderas, Antonio","Abril, Victoria","Almodï¿½var, Pedro",68,No
+01/01/1991,113,High Heels,Comedy,"Bosï¿½, Miguel","Abril, Victoria","Almodï¿½var, Pedro",68,No
 01/01/1983,104,"Dead Zone, The",Horror,"Walken, Christopher","Adams, Brooke","Cronenberg, David",79,No
 01/01/1979,122,Cuba,Action,"Connery, Sean","Adams, Brooke","Lester, Richard",6,No
 01/01/1978,94,Days of Heaven,Drama,"Gere, Richard","Adams, Brooke","Malick, Terrence",14,No
 01/01/1983,140,Octopussy,Action,"Moore, Roger","Adams, Maud","Glen, John",68,No
-01/01/1984,101,Target Eagle,Action,"Connors, Chuck","Adams, Maud","Loma, José Antonio de la",14,No
+01/01/1984,101,Target Eagle,Action,"Connors, Chuck","Adams, Maud","Loma, Josï¿½ Antonio de la",14,No
 01/01/1989,99,"American Angels: Baptism of Blood, The",Drama,"Bergen, Robert D.","Adams, Trudy","Sebastian, Beverly",28,No
 01/01/1985,104,Subway,Drama,"Lambert, Christopher","Adjani, Isabelle","Besson, Luc",6,No
-01/01/1990,149,Camille Claudel,Drama,"Depardieu, Gérard","Adjani, Isabelle","Nuytten, Bruno",32,No
-01/01/1982,188,Fanny and Alexander,Drama,"Ahlstedt, Börje","Adolphson, Kristina","Bergman, Ingmar",81,Yes
+01/01/1990,149,Camille Claudel,Drama,"Depardieu, Gï¿½rard","Adjani, Isabelle","Nuytten, Bruno",32,No
+01/01/1982,188,Fanny and Alexander,Drama,"Ahlstedt, Bï¿½rje","Adolphson, Kristina","Bergman, Ingmar",81,Yes
 01/01/1982,117,Tragedy of a Ridiculous Man,Drama,"Tognazzi, Ugo","Aimee, Anouk","Bertolucci, Bernardo",17,No
 01/01/1966,103,A Man & a Woman,Drama,"Trintignant, Jean-Louis","Aimee, Anouk","Lelouch, Claude",46,Yes
 01/01/1986,112,A Man & a Woman: Twenty Years Later,Drama,"Trintignant, Jean-Louis","Aimee, Anouk","Lelouch, Claude",49,No
@@ -30,12 +30,12 @@ Year,Length,Title,Subject,Actor,Actress,Director,Popularity,Awards
 01/01/1989,88,Final Notice,Mystery,"Gerard, Gil","Anderson, Melody","Stern, Steven Hilliard",88,No
 01/01/1979,110,Quintet,Drama,"Newman, Paul","Andersson, Bibi","Altman, Robert",19,No
 01/01/1960,90,"Devil's Eye, The",Drama,"Kulle, Jarl","Andersson, Bibi","Bergman, Ingmar",20,No
-01/01/1957,91,Wild Strawberries,Drama,"Sjöström, Victor","Andersson, Bibi","Bergman, Ingmar",42,Yes
+01/01/1957,91,Wild Strawberries,Drama,"Sjï¿½strï¿½m, Victor","Andersson, Bibi","Bergman, Ingmar",42,Yes
 01/01/1956,96,"Seventh Seal, The",Drama,"Sydow, Max von","Andersson, Bibi","Bergman, Ingmar",62,No
 01/01/1992,90,Germicide,Drama,"Taylor, Rod","Andersson, Bibi",,36,No
-01/01/1955,86,Dreams,Drama,"Björnstrand, Gunnar","Andersson, Harriet","Bergman, Ingmar",14,No
-01/01/1955,95,"Naked Night, The",Drama,"Björnstrand, Gunnar","Andersson, Harriet","Bergman, Ingmar",38,No
-01/01/1962,91,Through a Glass Darkly,Drama,"Björnstrand, Gunnar","Andersson, Harriet","Bergman, Ingmar",64,Yes
+01/01/1955,86,Dreams,Drama,"Bjï¿½rnstrand, Gunnar","Andersson, Harriet","Bergman, Ingmar",14,No
+01/01/1955,95,"Naked Night, The",Drama,"Bjï¿½rnstrand, Gunnar","Andersson, Harriet","Bergman, Ingmar",38,No
+01/01/1962,91,Through a Glass Darkly,Drama,"Bjï¿½rnstrand, Gunnar","Andersson, Harriet","Bergman, Ingmar",64,Yes
 01/01/1972,91,Cries & Whispers,Drama,"Josephson, Erland","Andersson, Harriet","Bergman, Ingmar",18,Yes
 01/01/1958,104,"Barbarian & the Geisha, The",Action,"Wayne, John","Ando, Eiko","Huston, John",52,No
 01/01/1967,130,Casino Royale,Comedy,"Niven, David","Andress, Ursula","Hughes, Ken",11,No
@@ -48,7 +48,7 @@ Year,Length,Title,Subject,Actor,Actress,Director,Popularity,Awards
 01/01/1986,107,Duet for One,Drama,"Bates, Alan","Andrews, Julie","Konchalovsky, Andrei",82,No
 01/01/1965,172,"Sound of Music, The",Music,"Plummer, Christopher","Andrews, Julie","Wise, Robert",59,Yes
 01/01/1985,55,Gonzo Presents Muppet Weird Stuff,Comedy,"Cleese, John","Andrews, Julie",,88,No
-01/01/1984,140,Tartuffe,Comedy,"Depardieu, Gérard","Annen, Paule","Depardieu, Gérard",67,No
+01/01/1984,140,Tartuffe,Comedy,"Depardieu, Gï¿½rard","Annen, Paule","Depardieu, Gï¿½rard",67,No
 01/01/1988,104,A New Life,Comedy,"Alda, Alan",Ann-Margret,"Alda, Alan",53,No
 01/01/1978,106,Magic,Mystery,"Hopkins, Anthony",Ann-Margret,"Attenborough, Richard",85,No
 01/01/1992,286,Tommy,Music,"Daltry, Roger",Ann-Margret,"Russell, Ken",5,No
@@ -56,7 +56,7 @@ Year,Length,Title,Subject,Actor,Actress,Director,Popularity,Awards
 01/01/1992,95,Alan & Naomi,Drama,"Haas, Lukas","Aquino, Vanessa","Vanwagenen, Sterling",3,No
 01/01/1987,120,Fatal Attraction,Mystery,"Douglas, Michael","Archer, Anne","Lyne, Adrian",61,No
 01/01/1992,117,Patriot Games,Action,"Ford, Harrison","Archer, Anne","Noyce, Phillip",28,No
-01/01/1981,106,"Woman Next Door, The",Drama,"Depardieu, Gérard","Ardant, Fanny","Truffaut, François",82,No
+01/01/1981,106,"Woman Next Door, The",Drama,"Depardieu, Gï¿½rard","Ardant, Fanny","Truffaut, Franï¿½ois",82,No
 01/01/1992,97,Hunting,Mystery,"Savage, John","Armstrong, Kerry","Howson, Frank",68,No
 01/01/1991,115,Bataan,War,"Taylor, Robert","Arnaz, Desi",,68,No
 01/01/1924,110,"Siegfried, The Nibelungenlied",Drama,"Richter, Paul","Arnold, Gertrud","Lang, Fritz",79,No
@@ -69,8 +69,8 @@ Year,Length,Title,Subject,Actor,Actress,Director,Popularity,Awards
 01/01/1971,102,A New Leaf,Comedy,"Matthau, Walter","Arrick, Rose","May, Elaine",83,No
 01/01/1959,91,Killers of Kilimanjaro,Action,"Taylor, Robert","Aslan, Gregoire","Thorpe, Richard",11,No
 01/01/1926,126,Don Juan,Action,"Barrymore, John","Astor, Mary","Crosland, Alan",55,No
-01/01/1987,102,Babette's Feast,Drama,"LaFont, Jean-Philippe","Audran, Stéphane","Axel, Gabriel",79,Yes
-01/01/1989,118,"Vincent, Francois, Paul & the Others",Drama,"Montand, Yves","Audran, Stéphane",,20,No
+01/01/1987,102,Babette's Feast,Drama,"LaFont, Jean-Philippe","Audran, Stï¿½phane","Axel, Gabriel",79,Yes
+01/01/1989,118,"Vincent, Francois, Paul & the Others",Drama,"Montand, Yves","Audran, Stï¿½phane",,20,No
 01/01/1988,141,Thunderball,Action,"Connery, Sean","Auger, Claudine","Young, Terrence",8,No
 01/01/1926,66,Lodger (Story of the London Fog),Mystery,"Chesney, Arthur","Ault, Marie","Hitchcock, Alfred",76,No
 01/01/1988,103,Appointment with Death,Mystery,"Ustinov, Peter","Bacall, Lauren","Donaggio, Michael Winner",75,No
@@ -138,12 +138,12 @@ Year,Length,Title,Subject,Actor,Actress,Director,Popularity,Awards
 01/01/1975,120,"Wind & the Lion, The",Action,"Connery, Sean","Bergen, Candice","Milius, John",2,No
 01/01/1971,96,Carnal Knowledge,Drama,"Nicholson, Jack","Bergen, Candice","Nichols, Mike",10,No
 01/01/1970,126,Getting Straight,Comedy,"Gould, Elliott","Bergen, Candice","Rush, Richard",83,No
-01/01/1972,90,"Scarlet Letter, The",Drama,"Albaicín, Rafael","Berger, Senta","Wenders, Wim",55,No
+01/01/1972,90,"Scarlet Letter, The",Drama,"Albaicï¿½n, Rafael","Berger, Senta","Wenders, Wim",55,No
 01/01/1935,75,"Count of Old Town, The",Comedy,"Adolphson, Edvin","Bergman, Ingrid","Adolphson, Edvin",72,No
-01/01/1978,97,Autumn Sonata,Drama,"Björk, Halvar","Bergman, Ingrid","Bergman, Ingmar",49,Yes
+01/01/1978,97,Autumn Sonata,Drama,"Bjï¿½rk, Halvar","Bergman, Ingrid","Bergman, Ingmar",49,Yes
 01/01/1944,114,Gaslight,Drama,"Boyer, Charles","Bergman, Ingrid","Cukor, George",25,Yes
 01/01/1958,100,Indiscreet,Drama,"Grant, Cary","Bergman, Ingrid","Donen, Stanley",1,No
-01/01/1941,75,Walpurgis Night,Drama,"Sjöström, Victor","Bergman, Ingrid","Edgren, Gustaf",32,No
+01/01/1941,75,Walpurgis Night,Drama,"Sjï¿½strï¿½m, Victor","Bergman, Ingrid","Edgren, Gustaf",32,No
 01/01/1948,100,Joan of Arc,Drama,"Ferrer, Jose","Bergman, Ingrid","Fleming, Victor",7,No
 01/01/1982,195,A Woman Called Golda,Drama,"Beatty, Ned","Bergman, Ingrid","Gibson, Alan",15,Yes
 01/01/1969,98,A Walk in the Spring Rain,Drama,"Quinn, Anthony","Bergman, Ingrid","Green, Guy",2,No
@@ -153,9 +153,9 @@ Year,Length,Title,Subject,Actor,Actress,Director,Popularity,Awards
 01/01/1961,120,Goodbye Again,Drama,"Perkins, Anthony","Bergman, Ingrid","Litvak, Anatole",6,No
 01/01/1956,106,Anastasia,Drama,"Tamiroff, Akim","Bergman, Ingrid","Litvak, Anatole",24,Yes
 01/01/1945,126,"Bells of St. Mary's, The",Drama,"Crosby, Bing","Bergman, Ingrid","McCarey, Leo",31,No
-01/01/1937,91,Intermezzo,Drama,"Ekman, Gösta","Bergman, Ingrid","Molander, Gustaf",32,No
+01/01/1937,91,Intermezzo,Drama,"Ekman, Gï¿½sta","Bergman, Ingrid","Molander, Gustaf",32,No
 01/01/1938,104,A Woman's Face,Drama,"Svennberg, Tore","Bergman, Ingrid","Molander, Gustaf",49,No
-01/01/1935,90,Swedenhielms,Drama,"Westergren, Håkan","Bergman, Ingrid","Molander, Gustaf",88,No
+01/01/1935,90,Swedenhielms,Drama,"Westergren, Hï¿½kan","Bergman, Ingrid","Molander, Gustaf",88,No
 01/01/1939,87,Only One Night,Drama,"Adolphson, Edvin","Bergman, Ingrid","Molander, Gustav",26,No
 01/01/1938,74,Dollar,Drama,"Rydeberg, Georg","Bergman, Ingrid","Molander, Gustav",19,No
 01/01/1956,98,Elena & Her Men,Drama,"Ferrer, Mel","Bergman, Ingrid","Renoir, Jean",33,No
@@ -177,8 +177,8 @@ Year,Length,Title,Subject,Actor,Actress,Director,Popularity,Awards
 01/01/1988,172,"Unbearable Lightness of Being, The",Drama,"Day-Lewis, Daniel","Binoche, Juliette","Kaufman, Philip",5,Yes
 01/01/1972,124,"Life & Times of Judge Roy Bean, The",Western,"Newman, Paul","Bisset, Jacqueline","Huston, John",65,No
 01/01/1970,137,Airport,Drama,"Lancaster, Burt","Bisset, Jacqueline","Seaton, George",0,Yes
-01/01/1973,116,Day for Night,Drama,"Aumont, Jean-Pierre","Bisset, Jacqueline","Truffaut, François",10,Yes
-01/01/1952,107,Secrets of Women,Comedy,"Malmsten, Birger","Björk, Anita","Bergman, Ingmar",66,No
+01/01/1973,116,Day for Night,Drama,"Aumont, Jean-Pierre","Bisset, Jacqueline","Truffaut, Franï¿½ois",10,Yes
+01/01/1952,107,Secrets of Women,Comedy,"Malmsten, Birger","Bjï¿½rk, Anita","Bergman, Ingmar",66,No
 01/01/1976,116,Burnt Offerings,Horror,"Reed, Oliver","Black, Karen","Curtis, Dan",35,No
 01/01/1969,94,Easy Rider,Drama,"Fonda, Peter","Black, Karen","Hopper, Dennis",36,No
 01/01/1991,98,Five Easy Pieces,Drama,"Nicholson, Jack","Black, Karen","Rafelson, Bob",2,No
@@ -191,7 +191,7 @@ Year,Length,Title,Subject,Actor,Actress,Director,Popularity,Awards
 01/01/1973,105,High Plains Drifter,Western,"Eastwood, Clint","Bloom, Verna","Eastwood, Clint",57,No
 01/01/1982,123,Honkytonk Man,Drama,"Eastwood, Clint","Bloom, Verna","Eastwood, Clint",69,No
 01/01/1990,102,Nightbreed,Horror,"Cronenberg, David","Bobby, Anne","Barker, Clive",72,No
-01/01/1987,98,Under the Sun of Satan,Drama,"Depardieu, Gérard","Bonnaire, Sandrine","Pialat, Maurice",45,No
+01/01/1987,98,Under the Sun of Satan,Drama,"Depardieu, Gï¿½rard","Bonnaire, Sandrine","Pialat, Maurice",45,No
 01/01/1985,105,Vagabond,Drama,"Meril, Macha","Bonnaire, Sandrine","Varda, Agnes",49,No
 01/01/1993,60,"Bill Cosby, Live at Harrah's",Comedy,"Cosby, Bill","Boosler, Elayne",,13,No
 01/01/1974,89,Monty Python & the Holy Grail,Comedy,"Chapman, Graham","Booth, Connie","Gilliam, Terry",83,No
@@ -205,15 +205,15 @@ Year,Length,Title,Subject,Actor,Actress,Director,Popularity,Awards
 01/01/1990,121,"Rookie, THe",Action,"Eastwood, Clint","Braga, Sonia","Eastwood, Clint",48,No
 01/01/1973,129,"Sting, The",Drama,"Newman, Paul","Brennan, Eileen","Hill, George Roy",83,Yes
 01/01/1958,96,Torpedo Run,War,"Ford, Glenn","Brewster, Diane","Pevney, Joseph",50,No
-01/01/1986,101,Instant Justice,Drama,"Paré, Michael","Bridges, Lynda","Rumar, Craig",45,No
-01/01/1990,135,Cyrano de Bergerac,Drama,"Depardieu, Gérard","Brochet, Anne","Rappeneau, Jean-Paul",76,No
+01/01/1986,101,Instant Justice,Drama,"Parï¿½, Michael","Bridges, Lynda","Rumar, Craig",45,No
+01/01/1990,135,Cyrano de Bergerac,Drama,"Depardieu, Gï¿½rard","Brochet, Anne","Rappeneau, Jean-Paul",76,No
 01/01/1948,110,Border Street,Drama,"Fijewski, Tadeusz","Broniewska, Maria","Ford, Aleksander",73,No
 01/01/1987,91,Firehouse,Comedy,"Hopkins, Barrett","Brown, Violet","Ingvordsen, J. Christian",66,No
 01/01/1965,123,Morituri,Drama,"Brando, Marlon","Brynner, Yul","Wicki, Bernhard",9,No
 01/01/1980,104,From the Life of the Marionettes,Drama,"Atzorn, Robert","Buchegger, Christine","Bergman, Ingmar",58,No
 01/01/1988,120,Frantic,Mystery,"Ford, Harrison","Buckley, Betty","Polanski, Roman",17,No
-01/01/1978,114,Coma,Science Fiction,"Douglas, Michael","Bujold, Geneviève","Crichton, Michael",64,No
-01/01/1988,117,Dead Ringers,Drama,"Irons, Jeremy","Bujold, Geneviève","Cronenberg, David",29,No
+01/01/1978,114,Coma,Science Fiction,"Douglas, Michael","Bujold, Geneviï¿½ve","Crichton, Michael",64,No
+01/01/1988,117,Dead Ringers,Drama,"Irons, Jeremy","Bujold, Geneviï¿½ve","Cronenberg, David",29,No
 01/01/1988,90,Golden Ninja Invasion,Action,"West, Leonard","Burd, Stephanie","Lambert, Bruce",13,No
 01/01/1973,122,"Exorcist, The",Horror,"Sydow, Max von","Burstyn, Ellen","Friedkin, William",28,Yes
 01/01/1975,112,Alice Doesn't Live Here Anymore,Comedy,"Kristofferson, Kris","Burstyn, Ellen",,82,Yes
@@ -232,7 +232,7 @@ Year,Length,Title,Subject,Actor,Actress,Director,Popularity,Awards
 01/01/1963,138,8 1/2,Drama,"Mastroianni, Marcello","Cardinale, Claudia","Fellini, Federico",80,Yes
 01/01/1935,64,One Frightened Night,Horror,"Ford, Wallace","Carlisle, Mary","Cabanne, Christy",33,No
 01/01/1988,103,"Year My Voice Broke, The",Drama,"Taylor, Noah","Carmen, Loene","Duigan, John",71,No
-01/01/1966,175,Is Paris Burning?,War,"Belmondo, Jean-Paul","Caron, Leslie","Clément, René",63,No
+01/01/1966,175,Is Paris Burning?,War,"Belmondo, Jean-Paul","Caron, Leslie","Clï¿½ment, Renï¿½",63,No
 01/01/1974,313,QB VII,Drama,"Hopkins, Anthony","Caron, Leslie","Gries, Tom",28,Yes
 01/01/1977,104,"Island of Dr. Moreau, The",Horror,"Lancaster, Burt","Carrera, Barbara","Taylor, Don",54,No
 01/01/1983,104,Beyond the Limit,Drama,"Caine, Michael","Carrillo, Elpidia","Mackenzie, John",51,No
@@ -269,7 +269,7 @@ Year,Length,Title,Subject,Actor,Actress,Director,Popularity,Awards
 01/01/1980,91,It's My Turn,Comedy,"Douglas, Michael","Clayburgh, Jill","Weill, Claudia",0,No
 01/01/1988,119,Dangerous Liaisons,Drama,"Malkovich, John","Close, Glenn","Frears, Stephen",77,No
 01/01/1990,111,Reversal of Fortune,Drama,"Irons, Jeremy","Close, Glenn","Schroeder, Barbet",73,Yes
-01/01/1991,119,Meeting Venus,Comedy,"Arestrup, Niels","Close, Glenn","Szabó, István",74,No
+01/01/1991,119,Meeting Venus,Comedy,"Arestrup, Niels","Close, Glenn","Szabï¿½, Istvï¿½n",74,No
 01/01/1946,105,Tomorrow Is Forever,Drama,"Welles, Orson","Colbert, Claudette",,65,No
 01/01/1987,101,Like Father Like Son,Comedy,"Cameron, Kirk","Colin, Margaret","Daniel, Rod",20,No
 01/01/1948,81,Rope,Drama,"Stewart, James","Collier, Constance","Hitchcock, Alfred",39,No
@@ -289,9 +289,9 @@ Year,Length,Title,Subject,Actor,Actress,Director,Popularity,Awards
 01/01/1977,123,Slap Shot,Comedy,"Newman, Paul","Crouse, Lindsay","Hill, George Roy",82,No
 01/01/1987,109,O. C. & Stiggs,Comedy,"Jenkins, Daniel H.","Curtin, Jane","Altman, Robert",3,No
 01/01/1988,108,A Fish Called Wanda,Comedy,"Cleese, John","Curtis, Jamie Lee","Crichton, Charles",7,Yes
-01/01/1954,96,A Lesson in Love,Comedy,"Björnstrand, Gunnar","Dahlbeck, Eva","Bergman, Ingmar",48,No
+01/01/1954,96,A Lesson in Love,Comedy,"Bjï¿½rnstrand, Gunnar","Dahlbeck, Eva","Bergman, Ingmar",48,No
 01/01/1957,82,Brink of Life,Drama,"Josephson, Erland","Dahlbeck, Eva","Bergman, Ingmar",57,No
-01/01/1986,120,Betty Blue,Drama,"Anglade, Jean-Hughes","Dalle, Béatrice","Beineix, Jean-Jacques",71,No
+01/01/1986,120,Betty Blue,Drama,"Anglade, Jean-Hughes","Dalle, Bï¿½atrice","Beineix, Jean-Jacques",71,No
 01/01/1979,122,Hair,Music,"Savage, John","D'Angelo, Beverly","Forman, Milos",67,No
 01/01/1989,97,National Lampoon's Christmas Vacation,Comedy,"Chase, Chevy","D'Angelo, Beverly","S, Jeremiah",81,No
 01/01/1974,124,"Dersu Uzala, (The Hunter)",Adventure,"Solomin, Yuri","Danilchenko, Svetlana","Kurosawa, Akira",81,Yes
@@ -324,12 +324,12 @@ Year,Length,Title,Subject,Actor,Actress,Director,Popularity,Awards
 01/01/1987,86,Fair Game,Action,"Ford, Peter","Delaney, Cassandra",,24,No
 01/01/1989,95,"Rape of the Sabines, The",Action,"Moore, Roger","Demongeot, Mylene",,83,No
 01/01/1983,99,Risky Business,Comedy,"Cruise, Tom","DeMornay, Rebecca","Brickman, Paul",28,No
-01/01/1980,103,I Love All of You (Je Vous Aime),Drama,"Depardieu, Gérard","Deneuve, Catherine","Berri, Claude",40,No
+01/01/1980,103,I Love All of You (Je Vous Aime),Drama,"Depardieu, Gï¿½rard","Deneuve, Catherine","Berri, Claude",40,No
 01/01/1986,108,Love Songs,Drama,"Lambert, Christopher","Deneuve, Catherine","Chouraqui, Elie",15,No
 01/01/1983,114,Le Choix des Armes,Mystery,"Montand, Yves","Deneuve, Catherine","Comeau, Alain",15,No
 01/01/1981,135,Choice of Arms,Action,"Montand, Yves","Deneuve, Catherine","Corneau, Alan",87,No
 01/01/1977,107,March or Die,War,"Hackman, Gene","Deneuve, Catherine","Richards, Dick",59,No
-01/01/1980,135,"Last Metro, The",Drama,"Depardieu, Gérard","Deneuve, Catherine","Truffaut, François",66,No
+01/01/1980,135,"Last Metro, The",Drama,"Depardieu, Gï¿½rard","Deneuve, Catherine","Truffaut, Franï¿½ois",66,No
 01/01/1986,120,Jean de Florette,Drama,"Montand, Yves","Depardieu, Elizabeth","Berri, Claude",87,Yes
 01/01/1989,127,Fat Man & Little Boy,Drama,"Newman, Paul","Dern, Laura","Joffe, Roland",86,No
 01/01/1990,125,Wild at Heart,Drama,"Cage, Nicolas","Dern, Laura","Lynch, David",6,No
@@ -459,7 +459,7 @@ Year,Length,Title,Subject,Actor,Actress,Director,Popularity,Awards
 01/01/1987,93,Hot Pursuit,Drama,"Cusack, John","Gazelle, Wendy","Lisberger, Steven",44,No
 01/01/1989,120,Triumph of the Spirit,Drama,"Dafoe, Willem","Gazelle, Wendy","Young, Robert M.",49,No
 01/01/1975,111,Brannigan,Drama,"Wayne, John","Geeson, Judy","Hickox, Douglas",64,No
-01/01/1979,89,Buffet Froid,Comedy,"Depardieu, Gérard","Gence, Denise","Blier, Bertrand",75,No
+01/01/1979,89,Buffet Froid,Comedy,"Depardieu, Gï¿½rard","Gence, Denise","Blier, Bertrand",75,No
 01/01/1986,122,Salvador,Drama,"Woods, James","Gibb, Cynthia","Stone, Oliver",77,No
 01/01/1959,102,"Horse Soldiers, The",Western,"Wayne, John","Gibson, Althea","Ford, John",76,No
 01/01/1954,108,Long John Silver,Action,"Newton, Robert","Gilchrist, Connie","Haskin, Byron",56,No
@@ -579,8 +579,8 @@ Year,Length,Title,Subject,Actor,Actress,Director,Popularity,Awards
 01/01/1950,104,Harvey,Comedy,"Stewart, James","Hull, Josephine","Koster, Henry",42,No
 01/01/1991,89,If Looks Could Kill,Action,"Grieco, Richard","Hunt, Linda","Wilmington, Michael",10,No
 01/01/1987,94,Raising Arizona,Comedy,"Cage, Nicolas","Hunter, Holly","Coen, Joel",23,No
-01/01/1989,114,Once Around,Comedy,"Dreyfuss, Richard","Hunter, Holly","Hallström, Lasse",68,No
-01/01/1980,110,Loulou,Drama,"Depardieu, Gérard","Huppert, Isabelle","Pialat, Maurice",65,No
+01/01/1989,114,Once Around,Comedy,"Dreyfuss, Richard","Hunter, Holly","Hallstrï¿½m, Lasse",68,No
+01/01/1980,110,Loulou,Drama,"Depardieu, Gï¿½rard","Huppert, Isabelle","Pialat, Maurice",65,No
 01/01/1982,136,"World According to Garp, The",Drama,"Williams, Robin","Hurt, Mary Beth","Hill, George Roy",59,No
 01/01/1980,106,Virus,Science Fiction,"Kennedy, George","Hussey, Olivia","Fukasaku, Kinji",62,No
 01/01/1940,127,Northwest Passage,Action,"Tracy, Spencer","Hussey, Ruth","Vidor, King",51,No
@@ -598,9 +598,9 @@ Year,Length,Title,Subject,Actor,Actress,Director,Popularity,Awards
 01/01/1970,129,Women in Love.,Drama,"Bates, Alan","Jackson, Glenda","Russell, Ken",18,No
 01/01/1988,89,Salome's Last Dance,Comedy,"Johns, Stratford","Jackson, Glenda","Russell, Ken",76,No
 01/01/1986,100,Casino,Mystery,"Connors, Mike","Jackson, Sherry","Chaffey, Don",5,No
-01/01/1955,108,Smiles of a Summer Night,Comedy,"Björnstrand, Gunnar","Jacobsson, Ulla","Bergman, Ingmar",58,No
+01/01/1955,108,Smiles of a Summer Night,Comedy,"Bjï¿½rnstrand, Gunnar","Jacobsson, Ulla","Bergman, Ingmar",58,No
 01/01/1989,90,New Year's Day,Comedy,"Jaglom, Henry","Jakobsen, Maggie","Jaglom, Henry",88,No
-01/01/1981,132,Mephisto,Drama,"Brandauer, Klaus Maria","Janda, Krystyna","Szabó, István",80,Yes
+01/01/1981,132,Mephisto,Drama,"Brandauer, Klaus Maria","Janda, Krystyna","Szabï¿½, Istvï¿½n",80,Yes
 01/01/1927,60,Easy Virtue,Mystery,"Dyall, Franklin","Jeans, Isabel","Hitchcock, Alfred",45,No
 01/01/1937,59,Swing It Sailor!,Comedy,"Ford, Wallace","Jewell, Isabel",,6,No
 01/01/1991,83,Strictly Business,Comedy,"Davidson, Tommy","Johnson, Anne-Marie","Hooks, Kevin",3,No
@@ -611,7 +611,7 @@ Year,Length,Title,Subject,Actor,Actress,Director,Popularity,Awards
 01/01/1963,99,Bedtime Story,Comedy,"Brando, Marlon","Jones, Shirley","Levy, Ralph",7,No
 01/01/1991,117,"Courtship of Eddie's Father, The",Comedy,"Howard, Ron","Jones, Shirley",,43,No
 01/01/1988,102,"Night Train to Katmandu, THe",Action,"Roberts, Pernell","Jovovich, Milla","Wiemer, Robert",43,No
-01/01/1948,100,Port of Call,Drama,"Eklund, Bengt","Jönsson, Nine-Christine","Bergman, Ingmar",29,No
+01/01/1948,100,Port of Call,Drama,"Eklund, Bengt","Jï¿½nsson, Nine-Christine","Bergman, Ingmar",29,No
 01/01/1973,103,Paper Moon,Comedy,"O'Neal, Ryan","Kahn, Madeline","Bogdanovich, Peter",3,Yes
 01/01/1983,97,Yellowbeard,Comedy,"Chapman, Graham","Kahn, Madeline","Damski, Mel",34,No
 01/01/1975,91,Adventures of Sherlock Holmes' Smarter,Comedy,"Wilder, Gene","Kahn, Madeline","Wilder, Gene",42,No
@@ -652,8 +652,8 @@ Year,Length,Title,Subject,Actor,Actress,Director,Popularity,Awards
 01/01/1970,90,Quackser Fortune Has a Cousin in the Bronx,Comedy,"Wilder, Gene","Kidder, Margot","Waris, Hussein",49,No
 01/01/1989,96,Dead Calm,Mystery,"Neill, Sam","Kidman, Nicole","Noyce, Phillip",1,No
 01/01/1990,107,Days of Thunder,Action,"Cruise, Tom","Kidman, Nicole","Scott, Tony",3,No
-01/01/1987,101,My Life As a Dog,Comedy,"Glanzelius, Anton","Kinnaman, Melinda","Hallström, Lasse",21,No
-01/01/1983,,"Moon in the Gutter, The",Action,"Depardieu, Gérard","Kinski, Nastassia","Beineix, Jean-Jacques",29,No
+01/01/1987,101,My Life As a Dog,Comedy,"Glanzelius, Anton","Kinnaman, Melinda","Hallstrï¿½m, Lasse",21,No
+01/01/1983,,"Moon in the Gutter, The",Action,"Depardieu, Gï¿½rard","Kinski, Nastassia","Beineix, Jean-Jacques",29,No
 01/01/1984,150,"Paris, Texas",Drama,"Stanton, Harry Dean","Kinski, Nastassia","Wenders, Wim",27,No
 01/01/1984,96,Unfaithfully Yours,Comedy,"Moore, Dudley","Kinski, Nastassia","Zieff, Howard",73,No
 01/01/1987,95,Bullseye!,Comedy,"Caine, Michael","Kirkland, Sally","Winner, Michael",8,No
@@ -673,7 +673,7 @@ Year,Length,Title,Subject,Actor,Actress,Director,Popularity,Awards
 01/01/1990,110,Mystery Train,Comedy,"Nagase, Masatoshi","Kudoh, Youki","Jarmusch, Jim",23,No
 01/01/1978,114,Go Tell the Spartans,War,"Lancaster, Burt","Kumagai, Denice","Post, Ted",67,No
 01/01/1986,89,True Stories,Comedy,"Goodman, John","Kurtz, Swoosie","Byrne, David",79,No
-01/01/1953,94,Ugetsu Monogatari,Drama,"Mori, Masayuki","Kyô, Machiki","Mizoguchi, Kenji",82,No
+01/01/1953,94,Ugetsu Monogatari,Drama,"Mori, Masayuki","Kyï¿½, Machiki","Mizoguchi, Kenji",82,No
 01/01/1969,80,Rebel Rousers,Action,"Nicholson, Jack","Ladd, Diane","Cohen, Martin B.",44,No
 01/01/1988,98,Plain Clothes,Comedy,"Howard, Arliss","Ladd, Diane","Coolidge, Martha",4,No
 01/01/1981,119,"Whose Life Is It, Anyway?",Drama,"Dreyfuss, Richard","Lahti, Christine","Badham, John",62,No
@@ -685,13 +685,13 @@ Year,Length,Title,Subject,Actor,Actress,Director,Popularity,Awards
 01/01/1983,94,Rumble Fish,Drama,"Dillon, Matt","Lane, Diane","Coppola, Francis Ford",4,No
 01/01/1983,91,"Outsiders, The",Drama,"Howell, C. Thomas","Lane, Diane","Coppola, Francis Ford",56,No
 01/01/1990,94,Priceless Beauty,Science Fiction,"Lambert, Christopher","Lane, Diane","Finch, Charles",7,No
-01/01/1989,93,Streets of Fire,Action,"Paré, Michael","Lane, Diane","Hill, Walter",65,No
+01/01/1989,93,Streets of Fire,Action,"Parï¿½, Michael","Lane, Diane","Hill, Walter",65,No
 01/01/1990,115,Men Don't Leave,Drama,"Howard, Arliss","Lange, Jessica","Brickman, Paul",66,No
 01/01/1988,127,Everybody's All American,Romance,"Quaid, Dennis","Lange, Jessica","Hackford, Taylor",62,No
 01/01/1992,128,Cape Fear,Mystery,"De Niro, Robert","Lange, Jessica","Scorsese, Martin",7,No
 01/01/1992,121,"Postman Always Rings Twice, The",Mystery,"Nicholson, Jack","Lange, Jessica",,24,No
 01/01/1949,58,Crashing Thru,Western,"Wilson, Whip","Larson, Christine","Taylor, Ray",19,No
-01/01/1978,109,Get Out Your Handkerchiefs,Comedy,"Depardieu, Gérard","Laure, Carole","Blier, Bertrand",78,Yes
+01/01/1978,109,Get Out Your Handkerchiefs,Comedy,"Depardieu, Gï¿½rard","Laure, Carole","Blier, Bertrand",78,Yes
 01/01/1971,137,"Boy Friend, THe",Music,"Gable, Christopher","Lawson, Twiggy","Russell, Ken",8,No
 01/01/1990,100,Hard To Kill,Action,"Seagal, Steven","LeBrock, Kelly","Malmuth, Bruce",49,No
 01/01/1960,109,Psycho,Horror,"Perkins, Anthony","Leigh, Janet","Hitchcock, Alfred",56,No
@@ -745,7 +745,7 @@ Year,Length,Title,Subject,Actor,Actress,Director,Popularity,Awards
 01/01/1991,102,Curly Sue,Comedy,"Belushi, Jim","Lynch, Kelly","Hughes, John",2,No
 01/01/1962,150,Lolita,Drama,"Mason, James","Lyon, Sue","Kubrick, Stanley",80,No
 01/01/1989,101,"Sex, Lies, and Videotape",Drama,"Spader, James","MacDowell, Andie","Soderbergh, Steven",70,Yes
-01/01/1990,107,Green Card,Comedy,"Depardieu, Gérard","MacDowell, Andie","Weir, Peter",25,No
+01/01/1990,107,Green Card,Comedy,"Depardieu, Gï¿½rard","MacDowell, Andie","Weir, Peter",25,No
 01/01/1988,95,Gator Bait II,Action,"Muzzcat, Paul","MacKenzie, Jan","Sebastian, Beverly",73,No
 01/01/1979,129,Being There,Comedy,"Sellers, Peter","MacLaine, Shirley","Ashby, Hal",31,Yes
 01/01/1983,132,Terms of Endearment,Drama,"Nicholson, Jack","MacLaine, Shirley","Brooks, James L.",32,Yes
@@ -782,9 +782,9 @@ Year,Length,Title,Subject,Actor,Actress,Director,Popularity,Awards
 01/01/1992,101,White Sands,Drama,"Dafoe, Willem","Mastrantonio, Mary Elizabeth","Donaldson, Roger",38,No
 01/01/1986,119,"Color of Money, The",Drama,"Newman, Paul","Mastrantonio, Mary Elizabeth","Scorsese, Martin",6,Yes
 01/01/1986,119,Children of a Lesser God,Drama,"Hurt, William","Matlin, Marlee","Haines, Randa",20,Yes
-01/01/1986,,Matador,Comedy,"Banderas, Antonio","Maura, Carmen","Almodóvar, Pedro",34,No
-01/01/1989,88,Women on the Verge of a Nervous Breakdown,Comedy,"Banderas, Antonio","Maura, Carmen","Almodóvar, Pedro",65,No
-01/01/1980,86,Pepi Luci Bom,Comedy,"Rotaeta, Félix","Maura, Carmen","Almodóvar, Pedro",66,No
+01/01/1986,,Matador,Comedy,"Banderas, Antonio","Maura, Carmen","Almodï¿½var, Pedro",34,No
+01/01/1989,88,Women on the Verge of a Nervous Breakdown,Comedy,"Banderas, Antonio","Maura, Carmen","Almodï¿½var, Pedro",65,No
+01/01/1980,86,Pepi Luci Bom,Comedy,"Rotaeta, Fï¿½lix","Maura, Carmen","Almodï¿½var, Pedro",66,No
 01/01/1989,100,"Forgotten, The",Mystery,"Carradine, Keith","Maynard, Mimi","Keach, James",69,No
 01/01/1992,89,"Flame & the Arrow, The",Action,"Lancaster, Burt","Mayo, Virginia",,0,No
 01/01/1990,92,After the Shock,Drama,"Kotto, Yaphet","McClanahan, Rue","Sherman, Gary",28,No
@@ -846,7 +846,7 @@ Year,Length,Title,Subject,Actor,Actress,Director,Popularity,Awards
 01/01/1982,107,Six Weeks,Drama,"Moore, Dudley","Moore, Mary Tyler","Bill, Tony",73,No
 01/01/1948,89,Return of October,Comedy,"Ford, Glenn","Moore, Terry","Lewis, Joseph H.",35,No
 01/01/1952,99,"Come Back, Little Sheba",Drama,"Lancaster, Burt","Moore, Terry","Mann, Daniel",50,Yes
-01/01/1974,117,Going Places,Drama,"Depardieu, Gérard","Moreau, Jeanne","Blier, Bertrand",66,No
+01/01/1974,117,Going Places,Drama,"Depardieu, Gï¿½rard","Moreau, Jeanne","Blier, Bertrand",66,No
 01/01/1970,99,Monte Walsh,Western,"Marvin, Lee","Moreau, Jeanne","Fraker, William A.",29,No
 01/01/1955,100,Mr. Arkadin,Drama,"Welles, Orson","Mori, Paola","Welles, Orson",80,No
 01/01/1988,,White of the Eye,Mystery,"Keith, David","Moriarty, Cathy","Cammell, Donald",48,No
@@ -969,7 +969,7 @@ Year,Length,Title,Subject,Actor,Actress,Director,Popularity,Awards
 01/01/1984,90,Ransom,Drama,"Ford, Glenn","Reed, Donna","Segal, Alex",73,No
 01/01/1990,97,Cadillac Man,Comedy,"Williams, Robin","Reed, Pamela","Donaldson, Roger",28,No
 01/01/1986,104,"Best of Times, The",Comedy,"Williams, Robin","Reed, Pamela","Spottiswoode, Roger",88,No
-01/01/1985,135,Death of a Salesman,Drama,"Hoffman, Dustin","Reid, Kate","Schlöndorff, Volker",13,No
+01/01/1985,135,Death of a Salesman,Drama,"Hoffman, Dustin","Reid, Kate","Schlï¿½ndorff, Volker",13,No
 01/01/1993,104,It Started with a Kiss,Drama,"Ford, Glenn","Reynolds, Debbie",,80,No
 01/01/1989,88,"Money, The",Drama,"Luckinbill, Laurence","Richards, Elizabeth",,29,No
 01/01/1987,153,Empire of the Sun,Drama,"Malkovich, John","Richardson, Miranda","Spielberg, Steven",6,No
@@ -1044,7 +1044,7 @@ Year,Length,Title,Subject,Actor,Actress,Director,Popularity,Awards
 01/01/1975,118,"Passenger, The",Drama,"Nicholson, Jack","Schneider, Maria","Antonioni, Michelangelo",32,No
 01/01/1973,127,Last Tango in Paris,Drama,"Brando, Marlon","Schneider, Maria","Bertolucci, Bernardo",28,No
 01/01/1987,155,Indigo Autumn & Lilac Dream,Drama,"Singer, Marc","Schrage, Lisa","Gillard, Stuart",72,No
-01/01/1924,95,"Kriemhild's Revenge, The Nibelungenlied",Drama,"Loos, Theodor","Schön, Margarete","Lang, Fritz",74,No
+01/01/1924,95,"Kriemhild's Revenge, The Nibelungenlied",Drama,"Loos, Theodor","Schï¿½n, Margarete","Lang, Fritz",74,No
 01/01/1966,102,Johnny Tiger,Drama,"Taylor, Robert","Scott, Brenda","Wendkos, Paul",69,No
 01/01/1986,90,Head Office,Comedy,"Reinhold, Judge","Seymour, Jane","Finkleman, Ken",88,No
 01/01/1990,,Live & Let Die,Action,"Moore, Roger","Seymour, Jane",,62,No
@@ -1159,7 +1159,7 @@ Year,Length,Title,Subject,Actor,Actress,Director,Popularity,Awards
 01/01/1987,93,Some Kind of Wonderful,Drama,"Stoltz, Eric","Thompson, Lea","Deutch, Howard",16,No
 01/01/1990,87,"All New Tales from the Crypt, A Trilogy",Horror,"Walsh, M. Emmet","Thompson, Lea","Deutch, Howard",33,No
 01/01/1985,116,Back to the Future,Comedy,"Fox, Michael J.","Thompson, Lea","Zemeckis, Robert",9,No
-01/01/1963,80,Winter Light,Drama,"Björnstrand, Gunnar","Thulin, Ingrid","Bergman, Ingmar",2,No
+01/01/1963,80,Winter Light,Drama,"Bjï¿½rnstrand, Gunnar","Thulin, Ingrid","Bergman, Ingmar",2,No
 01/01/1963,95,"Silence, The",Drama,"Malmsten, Birger","Thulin, Ingrid","Bergman, Ingmar",79,No
 01/01/1959,100,"Magician, The",Drama,"Sydow, Max von","Thulin, Ingrid","Bergman, Ingmar",3,No
 01/01/1961,154,"Four Horsemen of the Apocalypse, The",Drama,"Ford, Glenn","Thulin, Ingrid","Minnelli, Vincente",71,No
@@ -1184,7 +1184,7 @@ Year,Length,Title,Subject,Actor,Actress,Director,Popularity,Awards
 01/01/1988,90,Cannibal Women in the Avocado Jungle of Death,Comedy,"Primus, Barry","Tweed, Shannon","Lawton, J.F.",56,No
 01/01/1986,91,Mr Love.,Comedy,"Jackson, Barry","Tyzack, Margaret","Battersby, Roy",10,No
 01/01/1968,139,2001: A Space Odyssey,Science Fiction,"Dullea, Keir","Tyzack, Margaret","Kubrick, Stanley",83,No
-01/01/1966,81,Persona,Drama,"Björnstrand, Gunnar","Ullman, Liv","Bergman, Ingmar",81,Yes
+01/01/1966,81,Persona,Drama,"Bjï¿½rnstrand, Gunnar","Ullman, Liv","Bergman, Ingmar",81,Yes
 01/01/1973,,Scenes from a Marriage,Drama,"Josephson, Erland","Ullman, Liv","Bergman, Ingmar",3,Yes
 01/01/1968,88,Hour of the Wolf,Drama,"Sydow, Max von","Ullman, Liv","Bergman, Ingmar",37,No
 01/01/1969,101,"Passion of Anna, The",Drama,"Sydow, Max von","Ullman, Liv","Bergman, Ingmar",6,No
@@ -1192,7 +1192,7 @@ Year,Length,Title,Subject,Actor,Actress,Director,Popularity,Awards
 01/01/1957,147,Sayonara,Drama,"Brando, Marlon","Umeki, Miyoshi","Logan, Joshua",19,Yes
 01/01/1968,158,Where Eagles Dare,War,"Burton, Richard","Ure, Mary","Hulton, Brian G.",57,No
 01/01/1985,95,Teen Wolf,Drama,"Fox, Michael J.","Ursitti, Susan","Daniel, Rod",58,No
-01/01/1990,88,Amazon,Action,"Davi, Robert","Vaananen, Kari","Kaurismäki, Mika",30,No
+01/01/1990,88,Amazon,Action,"Davi, Robert","Vaananen, Kari","Kaurismï¿½ki, Mika",30,No
 01/01/1973,,"Paper Chase, The",Drama,"Bottoms, Timothy","Wagner, Lindsay","Bridges, James",7,Yes
 01/01/1959,88,"Virgin Spring, The",Drama,"Sydow, Max von","Valberg, Brigitta","Bergman, Ingmar",8,Yes
 01/01/1970,97,Spider's Stratagem,Drama,"Brogi, Giulio","Valli, Alida","Bertolucci, Bernardo",45,No
@@ -1210,7 +1210,7 @@ Year,Length,Title,Subject,Actor,Actress,Director,Popularity,Awards
 01/01/1992,115,Alien Three,Science Fiction,"Dutton, Charles","Weaver, Sigourney","Fincher, David",59,No
 01/01/1997,109,Alien: resurrection,Science Fiction,"Perlman, Ron","Weaver, Sigourney","Jeunet, Jean-Pierre",60,No
 01/01/1979,117,Alien,Science Fiction,"Skerritt, Tom","Weaver, Sigourney","Scott, Ridley",83,No
-01/01/1985,97,One Woman or Two,Comedy,"Depardieu, Gérard","Weaver, Sigourney","Vigne, Daniel",64,No
+01/01/1985,97,One Woman or Two,Comedy,"Depardieu, Gï¿½rard","Weaver, Sigourney","Vigne, Daniel",64,No
 01/01/1984,96,Soggy Bottom U. S. A.,Comedy,"Johnson, Ben","Wedgeworth, Ann","Flicker, Theodore J.",50,No
 01/01/1973,96,Bang the Drum Slowly,Drama,"Moriarty, Michael","Wedgeworth, Ann","Hancock, John D.",73,No
 01/01/1974,82,"Catamount Killing, The",Action,"Buchholz, Horst","Wedgeworth, Ann","Zanussi, Krzystoff",84,No
@@ -1285,7 +1285,7 @@ Year,Length,Title,Subject,Actor,Actress,Director,Popularity,Awards
 01/01/1977,146,Twilight's Last Gleaming,Drama,"Lancaster, Burt",,"Aldrich, Robert",84,No
 01/01/1979,119,"Frisco Kid, The",Comedy,"Wilder, Gene",,"Aldrich, Robert",10,No
 01/01/1954,30,Bank on the Stars,Drama,"Paar, Jack",,"Allen, Craig",,No
-01/01/1987,100,Law of Desire,Drama,"Maura, Carmen",,"Almodóvar, Pedro",73,No
+01/01/1987,100,Law of Desire,Drama,"Maura, Carmen",,"Almodï¿½var, Pedro",73,No
 01/01/1966,103,"Quiller Memorandum, The",Mystery,"Segal, George",,"Anderson, Michael",34,No
 01/01/1962,183,"Longest Day, The",War,"Wayne, John",,"Annakin, Ken",7,No
 01/01/1986,128,"Name of the Rose, The",Drama,"Connery, Sean",,"Annaud, Jean-Jacques",8,No
@@ -1297,7 +1297,7 @@ Year,Length,Title,Subject,Actor,Actress,Director,Popularity,Awards
 01/01/1987,164,"Last Emperor, The",Drama,"Lone, John",,"Bertolucci, Bernardo",1,Yes
 01/01/1962,100,"Grim Reaper, The",Drama,"Rulu, Francesco",,"Bertolucci, Bernardo",35,No
 01/01/1983,90,Le Dernier Combat,Drama,"Jolivet, Pierre",,"Besson, Luc",72,No
-01/01/1989,91,Too Beautiful for You,Drama,"Depardieu, Gérard",,"Blier, Bertrand",35,No
+01/01/1989,91,Too Beautiful for You,Drama,"Depardieu, Gï¿½rard",,"Blier, Bertrand",35,No
 01/01/1991,105,"Fire, Ice & Dynamite",Action,"Moore, Roger",,"Bogner, Willy",72,No
 01/01/1963,113,Heavens Above,Comedy,"Sellers, Peter",,"Boulting, John",38,No
 01/01/1961,141,One Eyed Jacks,Western,"Malden, Karl",,"Brando, Marlon",26,No
@@ -1517,16 +1517,16 @@ Year,Length,Title,Subject,Actor,Actress,Director,Popularity,Awards
 01/01/1991,102,Instant Karma,Comedy,"Cassidy, David",,"Taylor, Roderick",47,No
 01/01/1957,73,Time Lock,Drama,"Connery, Sean",,"Thomas, Gerald",5,No
 01/01/1953,79,Appointment in Honduras,Drama,"Ford, Glenn",,"Tourneur, Jacques",7,No
-01/01/1982,136,Danton,Drama,"Depardieu, Gérard",,"Wajda, Andrzej",5,No
+01/01/1982,136,Danton,Drama,"Depardieu, Gï¿½rard",,"Wajda, Andrzej",5,No
 01/01/1960,164,"Alamo, The",Action,"Wayne, John",,"Wayne, John",29,No
-01/01/1986,91,"La Chevre, (The Goat)",Drama,"Depardieu, Gérard",,"Veber, Francis",24,No
+01/01/1986,91,"La Chevre, (The Goat)",Drama,"Depardieu, Gï¿½rard",,"Veber, Francis",24,No
 01/01/1985,109,Les Comperes,Comedy,"Richard, Pierre",,"Veber, Francis",54,No
 01/01/1990,128,Dead Poets Society,Drama,"Williams, Robin",,"Weir, Peter",8,Yes
 01/01/1952,93,"Othello, The Lost Masterpiece",Drama,"Welles, Orson",,"Welles, Orson",23,No
 01/01/1949,119,"Battleground, The",War,"Johnson, Van",,"Wellman, William",7,No
 01/01/1976,176,Kings of the Road (In the Course of Time),Drama,"Vogler, Rudiger",,"Wenders, Wim",41,No
 01/01/1990,98,Hiroshima,Drama,"Nelson, Judd",,"Werner, Peter",17,No
-01/01/1982,111,"Return of Martin Guerre, The",Drama,"Depardieu, Gérard",,"Vigne, Daniel",51,No
+01/01/1982,111,"Return of Martin Guerre, The",Drama,"Depardieu, Gï¿½rard",,"Vigne, Daniel",51,No
 01/01/1956,97,Somebody up There Likes Me,Drama,"Newman, Paul",,"Wise, Robert",56,No
 01/01/1955,57,Jack Benny Show,Comedy,"Benny, Jack",,,51,No
 01/01/1962,182,Mutiny on the Bounty,Action,"Brando, Marlon",,,35,No

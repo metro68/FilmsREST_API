@@ -1,7 +1,7 @@
 package Films;
 
 
-import java.util.Date;
+import java.time.LocalDate;
 
 class FilmNotFoundException extends RuntimeException {
 
@@ -13,7 +13,7 @@ class FilmNotFoundException extends RuntimeException {
     super("Could not find film " + title);
   }
 
-  FilmNotFoundException(Date date) {
+  FilmNotFoundException(LocalDate date) {
     super("Could not find film " + date);
   }
 }

@@ -1,7 +1,7 @@
 package Films;
 
 
-import java.util.Date;
+import java.time.LocalDate;
 import java.util.Objects;
 
 import javax.persistence.Entity;
@@ -18,12 +18,12 @@ public class Film {
 
   @CsvBindByName
   @CsvDate("dd/MM/yyyy")
-  private Date year;
+  private LocalDate year;
 
   @CsvBindByName
   private int length;
 
-  @CsvBindByName(capture="([^ ]+) .*")
+  @CsvBindByName
   private String title;
 
   @CsvBindByName
@@ -35,7 +35,7 @@ public class Film {
   @CsvBindByName
   private String actress;
 
-  @CsvBindByName(capture="([^ ]+) .*")
+  @CsvBindByName
   private String director;
 
   @CsvBindByName
@@ -44,10 +44,21 @@ public class Film {
   @CsvBindByName
   private boolean awards;
 
-  Film(Film film) {
+  public Film(){}
+
+  public Film(Film film) {
+    this.year = film.year;
+    this.length = film.length;
+    this.title = film.title;
+    this.subject = film.subject;
+    this.actor = film.actor;
+    this.actress = film.actress;
+    this.director = film.director;
+    this.popularity = film.popularity;
+    this.awards = film.awards;
   }
 
-  Film(Date year, int length, String title, String subject, String actor, String actress, String director,
+  /*Film(Date year, int length, String title, String subject, String actor, String actress, String director,
       int popularity, boolean awards) {
 
     this.year = year;
@@ -59,7 +70,7 @@ public class Film {
     this.director = director;
     this.popularity = popularity;
     this.awards = awards;
-  }
+  }*/
 
   public Long getId() {
     return this.id;
@@ -69,11 +80,11 @@ public class Film {
     this.id = id;
   }
 
-  public Date getYear() {
+  public LocalDate getYear() {
     return this.year;
   }
 
-  public void setYear(Date year) {
+  public void setYear(LocalDate year) {
     this.year = year;
   }
 
