@@ -32,13 +32,13 @@ class FilmController {
     // tag::get-aggregate-root[]
 
     // APIs to implement - film length > 45 and length < 90, 20th century films
-    // Returns all film records - Working as intended
+    // Returns all film records
     @GetMapping("/allFilms")
     List<Film> all() {
         return repository.findAll();
     }
 
-    // Returns all titles and IDs. Maps have unique keys, bear that in mind when implementing this! - Working as intended
+    // Returns all titles and IDs
     @GetMapping("/titles")
     public List<Map<String,Object>> allTitles() {
 
@@ -61,7 +61,7 @@ class FilmController {
                 .orElseThrow(() -> new FilmNotFoundException(id));
     }
 
-    // Return all actors names - working as intended without duplicates
+    // Return all actors names
     @GetMapping("/actors")
     public Set<Map<String,String>> allActors() {
 
@@ -85,7 +85,7 @@ class FilmController {
         return response;
     }
 
-    // Return all actresses' names - working as intended without duplicates
+    // Return all actresses' names
     @GetMapping("/actresses")
     public Set<Map<String,String>> allActresses() {
 
@@ -107,7 +107,7 @@ class FilmController {
         return response;
     }
 
-    // Return all directors names - working as intended without duplicates
+    // Return all directors names
     @GetMapping("/directors")
     public Set<Map<String,String>> allDirectors() {
 
@@ -130,7 +130,7 @@ class FilmController {
         return response;
     }
 
-    // Get film titles by date. Date format (YYY-MM-DD) handled in application.properties file - working as intended without duplicates
+    // Get film titles by date. Date format (YYY-MM-DD) handled in application.properties file
     @GetMapping("/date/{year}")
     public ArrayList<Map<String,String>> getFilmsByDate(@PathVariable LocalDate year) {
 
