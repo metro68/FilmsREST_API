@@ -31,7 +31,7 @@ class FilmController {
     // Aggregate root
     // tag::get-aggregate-root[]
 
-    // APIs to implement - film length > 45 and length < 90, 20th century films
+    // APIs to implement - film length > 45 and length < 90, 20th century films. Fix director multi param query
     // Returns all film records
     @GetMapping("/allFilms")
     List<Film> all() {
