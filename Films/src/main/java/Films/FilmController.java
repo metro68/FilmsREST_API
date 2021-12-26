@@ -238,7 +238,7 @@ class FilmController {
         return response;
     }
 
-    // Returns movies based on if it was an 70s, 80s, 90s, etc movie. API call
+    // Returns movies based on if it was an 70s, 80s, 90s, etc movie. API call - not working yet
     // format - curl -v localhost:8080/api/film/decade?suffix=90s"
     @GetMapping("/decade")
     public ArrayList<Map<String, Object>> getFilmsByDecade(@RequestParam String suffix) {
@@ -255,7 +255,7 @@ class FilmController {
 
             // LinkedHashMap used tp ensure title appears before length
             Map<String, Object> filmInDecade = new LinkedHashMap<String, Object>();
-            if (film.getYear().getYear() < upperBound && film.getYear().getYear() >= lowerBound) {
+            if ((int)film.getYear().getYear() < upperBound && (int)film.getYear().getYear() >= lowerBound) {
                 filmInDecade.put("Year", film.getYear());
                 filmInDecade.put("Title", film.getTitle());
                 response.add(filmInDecade);
