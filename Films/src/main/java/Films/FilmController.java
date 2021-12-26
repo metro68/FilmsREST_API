@@ -13,6 +13,8 @@ import java.util.Set;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -22,7 +24,9 @@ import org.springframework.web.bind.annotation.RestController;
 class FilmController {
 
     private FilmRepository repository;
-    //Constructor injection used here rather than @autowired injection, constructor is recommended by spring
+
+    // Constructor injection used here rather than @autowired injection, constructor
+    // is recommended by spring
     FilmController(FilmRepository repository) {
 
         this.repository = repository;
@@ -31,7 +35,6 @@ class FilmController {
     // Aggregate root
     // tag::get-aggregate-root[]
 
-    // APIs to implement - film length > 45 and length < 90, 20th century films. Fix director multi param query
     // Returns all film records
     @GetMapping("/allFilms")
     List<Film> all() {
@@ -40,10 +43,10 @@ class FilmController {
 
     // Returns all titles and IDs
     @GetMapping("/titles")
-    public List<Map<String,Object>> allTitles() {
+    public List<Map<String, Object>> allTitles() {
 
         List<Film> films = repository.findAll();
-        List<Map<String,Object>> response = new ArrayList<Map<String,Object>>();
+        List<Map<String, Object>> response = new ArrayList<Map<String, Object>>();
         for (Film film : films) {
             Map<String, Object> idTitlePair = new LinkedHashMap<String, Object>();
             idTitlePair.put("id", film.getId());
@@ -53,7 +56,7 @@ class FilmController {
         return response;
     }
 
-    // Get films by ID - exception not working as intended
+    // Get films by ID - exception won't show for 'jq pretty print' - not a bug
     @GetMapping("/{id}")
     Film one(@PathVariable Long id) {
 
@@ -63,124 +66,225 @@ class FilmController {
 
     // Return all actors names
     @GetMapping("/actors")
-    public Set<Map<String,String>> allActors() {
+    public Set<Map<String, Object>> allActors() {
 
         List<Film> films = repository.findAll();
-        ArrayList<Map<String,String>> answer = new ArrayList<Map<String,String>>();
+        ArrayList<Map<String, Object>> answer = new ArrayList<Map<String, Object>>();
         for (Film film : films) {
-            Map<String, String> actorName = new HashMap<String, String>();
+            Map<String, Object> actorName = new HashMap<String, Object>();
             actorName.put("Actor", film.getActor());
 
-            //Some entries have no actor listed
-            if (actorName.get("Actress") != ""){
+            // Some entries have no actor listed
+            if (actorName.get("Actress") != "") {
                 answer.add(actorName);
             }
         }
 
         Collections.sort(answer, new FilmSortbyValue("Actor"));
 
-        //To remove duplicates
-        Set<Map<String,String>> response = new LinkedHashSet<Map<String,String>>(answer); 
+        // To remove duplicates
+        Set<Map<String, Object>> response = new LinkedHashSet<Map<String, Object>>(answer);
 
         return response;
     }
 
     // Return all actresses' names
     @GetMapping("/actresses")
-    public Set<Map<String,String>> allActresses() {
+    public Set<Map<String, Object>> allActresses() {
 
         List<Film> films = repository.findAll();
-        ArrayList<Map<String,String>> answer = new ArrayList<Map<String,String>>();
+        ArrayList<Map<String, Object>> answer = new ArrayList<Map<String, Object>>();
         for (Film film : films) {
-            Map<String, String> actressName = new HashMap<String, String>();
+            Map<String, Object> actressName = new HashMap<String, Object>();
             actressName.put("Actress", film.getActress());
 
-            //Some entries have no actress listed
-            if (actressName.get("Actress") != ""){
+            // Some entries have no actress listed
+            if (actressName.get("Actress") != "") {
                 answer.add(actressName);
             }
         }
         Collections.sort(answer, new FilmSortbyValue("Actress"));
-        
-        //To remove duplicates
-        Set<Map<String,String>> response = new LinkedHashSet<Map<String,String>>(answer); 
+
+        // To remove duplicates
+        Set<Map<String, Object>> response = new LinkedHashSet<Map<String, Object>>(answer);
         return response;
     }
 
     // Return all directors names
     @GetMapping("/directors")
-    public Set<Map<String,String>> allDirectors() {
+    public Set<Map<String, Object>> allDirectors() {
 
         List<Film> films = repository.findAll();
-        ArrayList<Map<String,String>> answer = new ArrayList<Map<String,String>>();
+        ArrayList<Map<String, Object>> answer = new ArrayList<Map<String, Object>>();
         for (Film film : films) {
-            Map<String, String> directorName = new HashMap<String, String>();
+            Map<String, Object> directorName = new HashMap<String, Object>();
             directorName.put("Director", film.getDirector());
 
-            //Some entries have no director listed
-            if (directorName.get("Actress") != ""){
+            // Some entries have no director listed
+            if (directorName.get("Actress") != "") {
                 answer.add(directorName);
             }
         }
 
         Collections.sort(answer, new FilmSortbyValue("Director"));
 
-        //To remove duplicates
-        Set<Map<String,String>> response = new LinkedHashSet<Map<String,String>>(answer); 
+        // To remove duplicates
+        Set<Map<String, Object>> response = new LinkedHashSet<Map<String, Object>>(answer);
         return response;
     }
 
-    // Get film titles by date. Date format (YYY-MM-DD) handled in application.properties file
+    // Get film titles by date. Date format (YYY-MM-DD) handled in
+    // application.properties file
     @GetMapping("/date/{year}")
-    public ArrayList<Map<String,String>> getFilmsByDate(@PathVariable LocalDate year) {
+    public ArrayList<Map<String, Object>> getFilmsByDate(@PathVariable LocalDate year) {
 
         List<Film> films = repository.findAllByYear(year);
-        ArrayList<Map<String,String>> response = new ArrayList<Map<String,String>>();
+        ArrayList<Map<String, Object>> response = new ArrayList<Map<String, Object>>();
         for (Film film : films) {
-            Map<String, String> filmTitle = new LinkedHashMap<String, String>();
+            Map<String, Object> filmTitle = new LinkedHashMap<String, Object>();
             filmTitle.put("Title", film.getTitle());
             response.add(filmTitle);
         }
         Collections.sort(response, new FilmSortbyValue("Title"));
-        
-        //To remove duplicates - unnecessary, should be handled in put mapping
-        //Set<Map<String,String>> response = new LinkedHashSet<Map<String,String>>(answer);
+
+        // To remove duplicates - unnecessary, should be handled in put mapping
+        // Set<Map<String, Object>> response = new LinkedHashSet<Map<String,
+        // Object>>(answer);
         return response;
     }
 
-    // Get film titles by director name using a query string with multi parameters - not working as intended
+    // Get film titles by director name using a query with multiple string
+    // parameters. API call format - curl -v
+    // localhost:8080/api/film/"director?firstName=Pedro&secondName=Almodovar"
     @GetMapping("/director")
-    public Map<String, Object> getFilmsByDirector(@RequestParam String firstName, @RequestParam String secondName) {
-        
-        String director = firstName + " " + secondName;
+    public ArrayList<Map<String, Object>> getFilmsByDirector(@RequestParam String firstName,
+            @RequestParam String secondName) {
+
+        // ',' added below to match the format in csv file
+        String director = firstName + ", " + secondName;
         List<Film> films = repository.findAllByDirector(director);
-        Map<String, Object> response = new LinkedHashMap<String, Object>();
+        ArrayList<Map<String, Object>> response = new ArrayList<Map<String, Object>>();
         for (Film film : films) {
-            response.put("Title", film.getTitle());
+            Map<String, Object> directorFilm = new LinkedHashMap<String, Object>();
+            directorFilm.put("Title", film.getTitle());
+            response.add(directorFilm);
         }
+
+        Collections.sort(response, new FilmSortbyValue("Title"));
         return response;
     }
 
-    /*
-     * @PutMapping("/films/{id}")
+    // Get film titles by actor name using a query with multiple string parameters.
+    // API call format - curl -v
+    // localhost:8080/api/film/"actor?firstName=Pedro&secondName=Almodovar"
+    @GetMapping("/actor")
+    public ArrayList<Map<String, Object>> getFilmsByActor(@RequestParam String firstName,
+            @RequestParam String secondName) {
+
+        // ',' added below to match the format in csv file
+        String actor = firstName + ", " + secondName;
+        List<Film> films = repository.findAllByActor(actor);
+        ArrayList<Map<String, Object>> response = new ArrayList<Map<String, Object>>();
+        for (Film film : films) {
+            Map<String, Object> actorFilm = new LinkedHashMap<String, Object>();
+            actorFilm.put("Title", film.getTitle());
+            response.add(actorFilm);
+        }
+
+        Collections.sort(response, new FilmSortbyValue("Title"));
+        return response;
+    }
+
+    // Get film titles by actress name using a query with multiple string
+    // parameters. API call format - curl -v
+    // localhost:8080/api/film/"actress?firstName=Pedro&secondName=Almodovar"
+    @GetMapping("/actress")
+    public ArrayList<Map<String, Object>> getFilmsByActress(@RequestParam String firstName,
+            @RequestParam String secondName) {
+
+        // ',' added below to match the format in csv file
+        String actress = firstName + ", " + secondName;
+        List<Film> films = repository.findAllByDirector(actress);
+        ArrayList<Map<String, Object>> response = new ArrayList<Map<String, Object>>();
+        for (Film film : films) {
+            Map<String, Object> actressFilm = new LinkedHashMap<String, Object>();
+            actressFilm.put("Title", film.getTitle());
+            response.add(actressFilm);
+        }
+
+        Collections.sort(response, new FilmSortbyValue("Title"));
+        return response;
+    }
+
+    // Returns movies in a particular range of lengths. API call format - curl -v
+    // localhost:8080/api/film/"length?lt=90&gt=45"
+    @GetMapping("/length")
+    public ArrayList<Map<String, Object>> getFilmsByLength(@RequestParam String lt, @RequestParam String gt) {
+
+        List<Film> films = repository.findAll();
+        ArrayList<Map<String, Object>> response = new ArrayList<Map<String, Object>>();
+        for (Film film : films) {
+
+            // LinkedHashMap used tp ensure title appears before length
+            Map<String, Object> filmOfLength = new LinkedHashMap<String, Object>();
+            if (film.getLength() > Integer.valueOf(gt) && film.getLength() < Integer.valueOf(lt)) {
+                filmOfLength.put("Title", film.getTitle());
+                filmOfLength.put("Length", film.getLength());
+                response.add(filmOfLength);
+            }
+        }
+
+        Collections.sort(response, new FilmSortbyValue("Length"));
+        return response;
+    }
+
+    // Returns movies based on if it was an 70s, 80s, 90s, etc movie. API call
+    // format - curl -v localhost:8080/api/film/decade/90s"
+    @GetMapping("/decade")
+    public ArrayList<Map<String, Object>> getFilmsByDecade(@RequestParam String suffix) {
+
+        List<Film> films = repository.findAll();
+        ArrayList<Map<String, Object>> response = new ArrayList<Map<String, Object>>();
+
+        int lowerBound = 1900 + Integer.valueOf(suffix.substring(0, 2));
+
+        // int lowerBound = yearToCompare;
+        int upperBound = lowerBound + 10;
+
+        for (Film film : films) {
+
+            // LinkedHashMap used tp ensure title appears before length
+            Map<String, Object> filmInDecade = new LinkedHashMap<String, Object>();
+            if (film.getYear().getYear() < upperBound && film.getYear().getYear() >= lowerBound) {
+                filmInDecade.put("Year", film.getYear());
+                filmInDecade.put("Title", film.getTitle());
+                response.add(filmInDecade);
+            }
+        }
+
+        Collections.sort(response, new FilmSortbyValue("Year"));
+        return response;
+    }
+
+    /* // Add a new film to record
+     * @PutMapping("{id}")
      * Film replaceFilm(@RequestBody Film newFilm, @PathVariable Long id) {
-     * 
-     * return repository.findById(id)
-     * film.setTitle(newFilm.getTitle());
-     * film.setSubject(newFilm.getSubject());
-     * film.setActor(newFilm.getActor());
-     * film.setActress(newFilm.getActress());
-     * film.setDirector(newFilm.getDirector());
-     * film.setPopularity(newFilm.getPopularity());
-     * film.setAwards(newFilm.getAwards());
-     * return repository.save(film);
-     * })
-     * .orElseGet(() -> {
-     * newFilm.setId(id);
-     * return repository.save(newFilm);
-     * });
-     * }
-     */
+     *     return repository.findById(id)
+     *             .map(film -> {
+     *                 film.setTitle(newFilm.getTitle());
+     *                 film.setSubject(newFilm.getSubject());
+     *                 film.setActor(newFilm.getActor());
+     *                 film.setActress(newFilm.getActress());
+     *                 film.setDirector(newFilm.getDirector());
+     *                  film.setPopularity(newFilm.getPopularity());
+     *                   film.setAwards(newFilm.getAwards());
+     *                  return repository.save(film);
+     *              })
+     *              .orElseGet(() -> {
+     *                  newFilm.setId(id);
+     *                 return repository.save(newFilm);
+     *             });
+    }*/
 
     @DeleteMapping("/films/{id}")
     void deleteFilm(@PathVariable Long id) {

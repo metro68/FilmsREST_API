@@ -3,7 +3,7 @@ package Films;
 import java.util.Comparator;
 import java.util.Map;
 
-public class FilmSortbyValue implements Comparator<Map<String, String>>
+public class FilmSortbyValue implements Comparator<Map<String, Object>>
 {
     private final String key;
 
@@ -12,12 +12,12 @@ public class FilmSortbyValue implements Comparator<Map<String, String>>
         this.key = key;
     }
 
-    public int compare(Map<String, String> first,
-                       Map<String, String> second)
+    public int compare(Map<String, Object> first,
+                       Map<String, Object> second)
     {
-        String firstValue = first.get(key);
-        String secondValue = second.get(key);
-        return firstValue.compareTo(secondValue);
+        Object firstValue = first.get(key);
+        Object secondValue = second.get(key);
+        return ((String) firstValue).compareTo((String) secondValue);
     }
 }
 
