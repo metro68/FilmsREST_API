@@ -239,7 +239,7 @@ class FilmController {
     }
 
     // Returns movies based on if it was an 70s, 80s, 90s, etc movie. API call
-    // format - curl -v localhost:8080/api/film/decade/90s"
+    // format - curl -v localhost:8080/api/film/decade?suffix=90s"
     @GetMapping("/decade")
     public ArrayList<Map<String, Object>> getFilmsByDecade(@RequestParam String suffix) {
 
