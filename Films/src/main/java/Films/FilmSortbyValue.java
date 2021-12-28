@@ -17,7 +17,7 @@ public class FilmSortbyValue implements Comparator<Map<String, Object>>
     {
         Object firstValue = first.get(key);
         Object secondValue = second.get(key);
-        return ((String) firstValue).compareTo((String) secondValue);
+        return (firstValue.toString().compareTo(secondValue.toString()));
     }
 }
 

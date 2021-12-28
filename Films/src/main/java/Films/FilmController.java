@@ -238,7 +238,7 @@ class FilmController {
         return response;
     }
 
-    // Returns movies based on if it was an 70s, 80s, 90s, etc movie. API call - not working yet
+    // Returns movies based on if it was an 70s, 80s, 90s, etc movie.
     // format - curl -v localhost:8080/api/film/decade?suffix=90s"
     @GetMapping("/decade")
     public ArrayList<Map<String, Object>> getFilmsByDecade(@RequestParam String suffix) {
@@ -250,6 +250,35 @@ class FilmController {
 
         // int lowerBound = yearToCompare;
         int upperBound = lowerBound + 10;
+
+        for (Film film : films) {
+
+            // LinkedHashMap used tp ensure title appears before length
+            Map<String, Object> filmInDecade = new LinkedHashMap<String, Object>();
+            if ((int)film.getYear().getYear() < upperBound && (int)film.getYear().getYear() >= lowerBound) {
+                filmInDecade.put("Year", film.getYear());
+                filmInDecade.put("Title", film.getTitle());
+                response.add(filmInDecade);
+            }
+        }
+
+        Collections.sort(response, new FilmSortbyValue("Year"));
+        return response;
+    }
+
+    // Returns movies based on if it was an 18th, 19th, 20th, 21st century, etc movie.
+    // format - curl -v localhost:8080/api/film/century?suffix=20th"
+    @GetMapping("/century")
+    public ArrayList<Map<String, Object>> getFilmsByCentury(@RequestParam String suffix) {
+
+        List<Film> films = repository.findAll();
+        ArrayList<Map<String, Object>> response = new ArrayList<Map<String, Object>>();
+
+        //21st century started in (21-1)*100 = 2000
+        int lowerBound = (Integer.valueOf(suffix.substring(0, 2))-1)*100;
+
+        // int lowerBound = yearToCompare;
+        int upperBound = lowerBound + 100;
 
         for (Film film : films) {
 
