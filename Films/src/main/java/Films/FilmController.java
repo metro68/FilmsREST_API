@@ -13,6 +13,7 @@ import java.util.Set;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -255,7 +256,7 @@ class FilmController {
 
             // LinkedHashMap used tp ensure title appears before length
             Map<String, Object> filmInDecade = new LinkedHashMap<String, Object>();
-            if ((int)film.getYear().getYear() < upperBound && (int)film.getYear().getYear() >= lowerBound) {
+            if ((int) film.getYear().getYear() < upperBound && (int) film.getYear().getYear() >= lowerBound) {
                 filmInDecade.put("Year", film.getYear());
                 filmInDecade.put("Title", film.getTitle());
                 response.add(filmInDecade);
@@ -266,7 +267,8 @@ class FilmController {
         return response;
     }
 
-    // Returns movies based on if it was an 18th, 19th, 20th, 21st century, etc movie.
+    // Returns movies based on if it was an 18th, 19th, 20th, 21st century, etc
+    // movie.
     // format - curl -v localhost:8080/api/film/century?suffix=20th"
     @GetMapping("/century")
     public ArrayList<Map<String, Object>> getFilmsByCentury(@RequestParam String suffix) {
@@ -274,8 +276,8 @@ class FilmController {
         List<Film> films = repository.findAll();
         ArrayList<Map<String, Object>> response = new ArrayList<Map<String, Object>>();
 
-        //21st century started in (21-1)*100 = 2000
-        int lowerBound = (Integer.valueOf(suffix.substring(0, 2))-1)*100;
+        // 21st century started in (21-1)*100 = 2000
+        int lowerBound = (Integer.valueOf(suffix.substring(0, 2)) - 1) * 100;
 
         // int lowerBound = yearToCompare;
         int upperBound = lowerBound + 100;
@@ -284,7 +286,7 @@ class FilmController {
 
             // LinkedHashMap used tp ensure title appears before length
             Map<String, Object> filmInDecade = new LinkedHashMap<String, Object>();
-            if ((int)film.getYear().getYear() < upperBound && (int)film.getYear().getYear() >= lowerBound) {
+            if ((int) film.getYear().getYear() < upperBound && (int) film.getYear().getYear() >= lowerBound) {
                 filmInDecade.put("Year", film.getYear());
                 filmInDecade.put("Title", film.getTitle());
                 response.add(filmInDecade);
@@ -295,25 +297,39 @@ class FilmController {
         return response;
     }
 
-    /* // Add a new film to record
+    //Add new film to record
+    /*@PostMapping(path = "/newFilm", consumes = "application/json")
+    public Film newFilm(@RequestBody Film newFilm) {
+        return repository.save(newFilm);
+    }*/
+
+    /*@PostMapping(path = "/newFilm", consumes = "application/x-www-form-urlencoded")
+    Film newFilm(Film newFilm) {
+        return repository.save(newFilm);
+    }*/
+
+    /*
+     * // Update an existing record
+     * 
      * @PutMapping("{id}")
      * Film replaceFilm(@RequestBody Film newFilm, @PathVariable Long id) {
-     *     return repository.findById(id)
-     *             .map(film -> {
-     *                 film.setTitle(newFilm.getTitle());
-     *                 film.setSubject(newFilm.getSubject());
-     *                 film.setActor(newFilm.getActor());
-     *                 film.setActress(newFilm.getActress());
-     *                 film.setDirector(newFilm.getDirector());
-     *                  film.setPopularity(newFilm.getPopularity());
-     *                   film.setAwards(newFilm.getAwards());
-     *                  return repository.save(film);
-     *              })
-     *              .orElseGet(() -> {
-     *                  newFilm.setId(id);
-     *                 return repository.save(newFilm);
-     *             });
-    }*/
+     * return repository.findById(id)
+     * .map(film -> {
+     * film.setTitle(newFilm.getTitle());
+     * film.setSubject(newFilm.getSubject());
+     * film.setActor(newFilm.getActor());
+     * film.setActress(newFilm.getActress());
+     * film.setDirector(newFilm.getDirector());
+     * film.setPopularity(newFilm.getPopularity());
+     * film.setAwards(newFilm.getAwards());
+     * return repository.save(film);
+     * })
+     * .orElseGet(() -> {
+     * newFilm.setId(id);
+     * return repository.save(newFilm);
+     * });
+     * }
+     */
 
     @DeleteMapping("/films/{id}")
     void deleteFilm(@PathVariable Long id) {
