@@ -22,6 +22,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/api/films")
+public
 class FilmController {
 
     private FilmRepository repository;
@@ -38,7 +39,7 @@ class FilmController {
 
     // Returns all film records
     @GetMapping("/allFilms")
-    List<Film> all() {
+    public List<Film> all() {
         return repository.findAll();
     }
 
@@ -59,7 +60,7 @@ class FilmController {
 
     // Get films by ID - exception won't show for 'jq pretty print' - not a bug
     @GetMapping("/{id}")
-    Film one(@PathVariable Long id) {
+    public Film one(@PathVariable Long id) {
 
         return repository.findById(id)
                 .orElseThrow(() -> new FilmNotFoundException(id));
@@ -76,7 +77,7 @@ class FilmController {
             actorName.put("Actor", film.getActor());
 
             // Some entries have no actor listed
-            if (actorName.get("Actress") != "") {
+            if (actorName.get("Actor") != "") {
                 answer.add(actorName);
             }
         }
@@ -134,7 +135,7 @@ class FilmController {
         return response;
     }
 
-    // Get film titles by date. Date format (YYY-MM-DD) handled in
+    // Get film titles by date. Date format (YYYY-MM-DD) handled in
     // application.properties file
     @GetMapping("/date/{year}")
     public ArrayList<Map<String, Object>> getFilmsByDate(@PathVariable LocalDate year) {
@@ -254,7 +255,7 @@ class FilmController {
 
         for (Film film : films) {
 
-            // LinkedHashMap used tp ensure title appears before length
+            // LinkedHashMap used to ensure title appears before length
             Map<String, Object> filmInDecade = new LinkedHashMap<String, Object>();
             if ((int) film.getYear().getYear() < upperBound && (int) film.getYear().getYear() >= lowerBound) {
                 filmInDecade.put("Year", film.getYear());
