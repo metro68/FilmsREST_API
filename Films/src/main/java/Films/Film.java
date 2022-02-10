@@ -1,6 +1,5 @@
 package Films;
 
-
 import java.time.LocalDate;
 import java.util.Objects;
 
@@ -44,7 +43,8 @@ public class Film {
   @CsvBindByName
   private boolean awards;
 
-  public Film(){}
+  public Film() {
+  }
 
   public Film(Film film) {
     this.year = film.year;
@@ -58,19 +58,22 @@ public class Film {
     this.awards = film.awards;
   }
 
-  /*Film(Date year, int length, String title, String subject, String actor, String actress, String director,
-      int popularity, boolean awards) {
-
-    this.year = year;
-    this.length = length;
-    this.title = title;
-    this.subject = subject;
-    this.actor = actor;
-    this.actress = actress;
-    this.director = director;
-    this.popularity = popularity;
-    this.awards = awards;
-  }*/
+  /*
+   * Film(Date year, int length, String title, String subject, String actor,
+   * String actress, String director,
+   * int popularity, boolean awards) {
+   * 
+   * this.year = year;
+   * this.length = length;
+   * this.title = title;
+   * this.subject = subject;
+   * this.actor = actor;
+   * this.actress = actress;
+   * this.director = director;
+   * this.popularity = popularity;
+   * this.awards = awards;
+   * }
+   */
 
   public Long getId() {
     return this.id;

@@ -28,7 +28,7 @@ public class FilmDatabase {
     CommandLineRunner initDatabase(FilmRepository repository) {
         return (args) -> {
 
-            String fileName = "Films/src/main/resources/example_data1.csv";
+            String fileName = "src/main/resources/example_data1.csv";
             Path myPath = Paths.get(fileName);
 
             try (BufferedReader br = Files.newBufferedReader(myPath,
@@ -53,6 +53,7 @@ public class FilmDatabase {
                 System.out.println("An error occurred in uploading the csv file.");
                 e.printStackTrace();
             }
-        };//An anonymous class. it enables you to declare and instantiate a class at the same time
+        };// An anonymous class. it enables you to declare and instantiate a class at the
+          // same time
     }
 }

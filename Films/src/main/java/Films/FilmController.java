@@ -22,8 +22,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/api/films")
-public
-class FilmController {
+public class FilmController {
 
     private FilmRepository repository;
 
@@ -74,15 +73,15 @@ class FilmController {
         ArrayList<Map<String, Object>> answer = new ArrayList<Map<String, Object>>();
         for (Film film : films) {
             Map<String, Object> actorName = new HashMap<String, Object>();
-            actorName.put("Actor", film.getActor());
+            actorName.put("actor", film.getActor());
 
             // Some entries have no actor listed
-            if (actorName.get("Actor") != "") {
+            if (actorName.get("actor") != "") {
                 answer.add(actorName);
             }
         }
 
-        Collections.sort(answer, new FilmSortbyValue("Actor"));
+        Collections.sort(answer, new FilmSortbyValue("actor"));
 
         // To remove duplicates
         Set<Map<String, Object>> response = new LinkedHashSet<Map<String, Object>>(answer);
@@ -98,14 +97,14 @@ class FilmController {
         ArrayList<Map<String, Object>> answer = new ArrayList<Map<String, Object>>();
         for (Film film : films) {
             Map<String, Object> actressName = new HashMap<String, Object>();
-            actressName.put("Actress", film.getActress());
+            actressName.put("actress", film.getActress());
 
             // Some entries have no actress listed
-            if (actressName.get("Actress") != "") {
+            if (actressName.get("actress") != "") {
                 answer.add(actressName);
             }
         }
-        Collections.sort(answer, new FilmSortbyValue("Actress"));
+        Collections.sort(answer, new FilmSortbyValue("actress"));
 
         // To remove duplicates
         Set<Map<String, Object>> response = new LinkedHashSet<Map<String, Object>>(answer);
@@ -120,15 +119,15 @@ class FilmController {
         ArrayList<Map<String, Object>> answer = new ArrayList<Map<String, Object>>();
         for (Film film : films) {
             Map<String, Object> directorName = new HashMap<String, Object>();
-            directorName.put("Director", film.getDirector());
+            directorName.put("director", film.getDirector());
 
             // Some entries have no director listed
-            if (directorName.get("Actress") != "") {
+            if (directorName.get("director") != "") {
                 answer.add(directorName);
             }
         }
 
-        Collections.sort(answer, new FilmSortbyValue("Director"));
+        Collections.sort(answer, new FilmSortbyValue("director"));
 
         // To remove duplicates
         Set<Map<String, Object>> response = new LinkedHashSet<Map<String, Object>>(answer);
@@ -144,10 +143,10 @@ class FilmController {
         ArrayList<Map<String, Object>> response = new ArrayList<Map<String, Object>>();
         for (Film film : films) {
             Map<String, Object> filmTitle = new LinkedHashMap<String, Object>();
-            filmTitle.put("Title", film.getTitle());
+            filmTitle.put("title", film.getTitle());
             response.add(filmTitle);
         }
-        Collections.sort(response, new FilmSortbyValue("Title"));
+        Collections.sort(response, new FilmSortbyValue("title"));
 
         // To remove duplicates - unnecessary, should be handled in put mapping
         // Set<Map<String, Object>> response = new LinkedHashSet<Map<String,
@@ -168,11 +167,11 @@ class FilmController {
         ArrayList<Map<String, Object>> response = new ArrayList<Map<String, Object>>();
         for (Film film : films) {
             Map<String, Object> directorFilm = new LinkedHashMap<String, Object>();
-            directorFilm.put("Title", film.getTitle());
+            directorFilm.put("title", film.getTitle());
             response.add(directorFilm);
         }
 
-        Collections.sort(response, new FilmSortbyValue("Title"));
+        Collections.sort(response, new FilmSortbyValue("title"));
         return response;
     }
 
@@ -189,11 +188,11 @@ class FilmController {
         ArrayList<Map<String, Object>> response = new ArrayList<Map<String, Object>>();
         for (Film film : films) {
             Map<String, Object> actorFilm = new LinkedHashMap<String, Object>();
-            actorFilm.put("Title", film.getTitle());
+            actorFilm.put("title", film.getTitle());
             response.add(actorFilm);
         }
 
-        Collections.sort(response, new FilmSortbyValue("Title"));
+        Collections.sort(response, new FilmSortbyValue("title"));
         return response;
     }
 
@@ -206,15 +205,15 @@ class FilmController {
 
         // ',' added below to match the format in csv file
         String actress = firstName + ", " + secondName;
-        List<Film> films = repository.findAllByDirector(actress);
+        List<Film> films = repository.findAllByActress(actress);
         ArrayList<Map<String, Object>> response = new ArrayList<Map<String, Object>>();
         for (Film film : films) {
             Map<String, Object> actressFilm = new LinkedHashMap<String, Object>();
-            actressFilm.put("Title", film.getTitle());
+            actressFilm.put("title", film.getTitle());
             response.add(actressFilm);
         }
 
-        Collections.sort(response, new FilmSortbyValue("Title"));
+        Collections.sort(response, new FilmSortbyValue("title"));
         return response;
     }
 
@@ -230,13 +229,13 @@ class FilmController {
             // LinkedHashMap used tp ensure title appears before length
             Map<String, Object> filmOfLength = new LinkedHashMap<String, Object>();
             if (film.getLength() > Integer.valueOf(gt) && film.getLength() < Integer.valueOf(lt)) {
-                filmOfLength.put("Title", film.getTitle());
-                filmOfLength.put("Length", film.getLength());
+                filmOfLength.put("title", film.getTitle());
+                filmOfLength.put("length", film.getLength());
                 response.add(filmOfLength);
             }
         }
 
-        Collections.sort(response, new FilmSortbyValue("Length"));
+        Collections.sort(response, new FilmSortbyValue("length"));
         return response;
     }
 
@@ -258,13 +257,13 @@ class FilmController {
             // LinkedHashMap used to ensure title appears before length
             Map<String, Object> filmInDecade = new LinkedHashMap<String, Object>();
             if ((int) film.getYear().getYear() < upperBound && (int) film.getYear().getYear() >= lowerBound) {
-                filmInDecade.put("Year", film.getYear());
-                filmInDecade.put("Title", film.getTitle());
+                filmInDecade.put("year", film.getYear());
+                filmInDecade.put("title", film.getTitle());
                 response.add(filmInDecade);
             }
         }
 
-        Collections.sort(response, new FilmSortbyValue("Year"));
+        Collections.sort(response, new FilmSortbyValue("year"));
         return response;
     }
 
@@ -288,31 +287,27 @@ class FilmController {
             // LinkedHashMap used tp ensure title appears before length
             Map<String, Object> filmInDecade = new LinkedHashMap<String, Object>();
             if ((int) film.getYear().getYear() < upperBound && (int) film.getYear().getYear() >= lowerBound) {
-                filmInDecade.put("Year", film.getYear());
-                filmInDecade.put("Title", film.getTitle());
+                filmInDecade.put("year", film.getYear());
+                filmInDecade.put("title", film.getTitle());
                 response.add(filmInDecade);
             }
         }
 
-        Collections.sort(response, new FilmSortbyValue("Year"));
+        Collections.sort(response, new FilmSortbyValue("year"));
         return response;
     }
 
-    //Add new film to record
-    /*@PostMapping(path = "/newFilm", consumes = "application/json")
-    public Film newFilm(@RequestBody Film newFilm) {
-        return repository.save(newFilm);
-    }*/
-
-    /*@PostMapping(path = "/newFilm", consumes = "application/x-www-form-urlencoded")
-    Film newFilm(Film newFilm) {
-        return repository.save(newFilm);
-    }*/
-
     /*
+     * // Add new film to record
+     * 
+     * @PostMapping(value = "/newFilm", consumes = {"text/plain", "application/*"})
+     * public Film newFilm(@RequestBody Film newFilm) {
+     * return repository.save(newFilm);
+     * }
+     * 
      * // Update an existing record
      * 
-     * @PutMapping("{id}")
+     * @PutMapping("/{id}")
      * Film replaceFilm(@RequestBody Film newFilm, @PathVariable Long id) {
      * return repository.findById(id)
      * .map(film -> {
@@ -332,7 +327,7 @@ class FilmController {
      * }
      */
 
-    @DeleteMapping("/films/{id}")
+    @DeleteMapping("/{id}")
     void deleteFilm(@PathVariable Long id) {
         repository.deleteById(id);
     }
