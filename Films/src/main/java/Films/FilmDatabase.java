@@ -28,7 +28,7 @@ public class FilmDatabase {
     CommandLineRunner initDatabase(FilmRepository repository) {
         return (args) -> {
 
-            String fileName = "src/main/resources/example_data1.csv";
+            String fileName = "Films/src/main/resources/example_data1.csv";
             Path myPath = Paths.get(fileName);
 
             try (BufferedReader br = Files.newBufferedReader(myPath,
