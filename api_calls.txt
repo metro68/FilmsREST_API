@@ -7,6 +7,7 @@ curl -X POST localhost:8080/api/films/newFilm  -H 'Content-type:application/json
 
 curl -X POST localhost:8080/api/films/newFilm -H 'Content-type:application/json' -d '{"year":"2021-12-15","length":148,"title":"Spider-Man: No Way Home","subject":"Action","actor":"Holland, Tom","actress":"Zendaya","director":"Watts, Jon","popularity":90,"awards":false}'
 
+
 //without @RequestBody
 /*
 C:\Users\ikora\OneDrive\Documents\Work\XLaw - Junior Software Developer\Films>curl -X POST localhost:8080/api/films/newFilm -H 'Content-type:application/json' -d '{"year"="2021-12-15","length"=148,"title"="Spider-Man= No Way Home","subject"="Action","actor"="Holland, Tom","actress"="Zendaya","director"="Watts, Jon","popularity"=90,"awards"=false}'
@@ -15,3 +16,6 @@ C:\Users\ikora\OneDrive\Documents\Work\XLaw - Junior Software Developer\Films>cu
 {"timestamp":"2021-12-28T23:27:44.965+00:00","status":415,"error":"Unsupported Media Type","path":"/api/films/newFilm"}
 
 */
+
+Last edit
+curl -X POST -H "Content-Type:application/json" -d '{"year":"2021-12-15","length":148,"title":"Spider-Man: No Way Home","subject":"Action","actor":"Holland, Tom","actress":"Zendaya","director":"Watts, Jon","popularity":90,"awards":false}' http://localhost:8080/api/films/newFilm/
