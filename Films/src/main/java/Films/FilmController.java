@@ -9,7 +9,13 @@ import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+import java.util.stream.Collectors;
 
+import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.linkTo;
+import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.methodOn;
+
+import org.springframework.hateoas.CollectionModel;
+import org.springframework.hateoas.EntityModel;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -24,13 +30,15 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/api/films")
 public class FilmController {
 
-    private FilmRepository repository;
+    private final FilmRepository repository;
+    private final FilmModelAssembler assembler;
 
     // Constructor injection used here rather than @autowired injection, constructor
     // is recommended by spring
-    FilmController(FilmRepository repository) {
+    FilmController(FilmRepository repository, FilmModelAssembler assembler) {
 
         this.repository = repository;
+        this.assembler = assembler;
     }
 
     // Aggregate root
@@ -38,11 +46,22 @@ public class FilmController {
 
     // Returns all film records
     @GetMapping("/allFilms")
-    public List<Film> all() {
-        return repository.findAll();
-    }
+    public CollectionModel<EntityModel<Film>> all() {
+
+        List<EntityModel<Film>> films = repository.findAll().stream()
+                .map(assembler::toModel)
+                .collect(Collectors.toList());
+
+        return CollectionModel.of(films, linkTo(methodOn(FilmController.class).all()).withSelfRel());
+    };
 
     // Returns all titles and IDs
+    /*
+     * In order to implement this with an assembler like the allFilms method, you
+     * will need to implement a class to store the pair of id and title and then
+     * create an assembler for that class to use here. The links are what make the
+     * API RESTful. This will not be implemented here
+     */
     @GetMapping("/titles")
     public List<Map<String, Object>> allTitles() {
 
@@ -59,10 +78,12 @@ public class FilmController {
 
     // Get films by ID - exception won't show for 'jq pretty print' - not a bug
     @GetMapping("/{id}")
-    public Film one(@PathVariable Long id) {
+    EntityModel<Film> one(@PathVariable Long id) {
 
-        return repository.findById(id)
+        Film film = repository.findById(id)
                 .orElseThrow(() -> new FilmNotFoundException(id));
+
+        return assembler.toModel(film);
     }
 
     // Return all actors names

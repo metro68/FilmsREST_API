@@ -4,6 +4,8 @@ import com.opencsv.bean.CsvToBean;
 import com.opencsv.bean.CsvToBeanBuilder;
 import com.opencsv.bean.HeaderColumnNameMappingStrategy;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -24,11 +26,13 @@ public class FilmDatabase {
     // public static void main(String[] args) throws IOException { /*There should
     // only be one main method in tht application*/
 
+    private static final Logger log = LoggerFactory.getLogger(FilmDatabase.class);
+
     @Bean
     CommandLineRunner initDatabase(FilmRepository repository) {
         return (args) -> {
 
-            String fileName = "Films/src/main/resources/example_data1.csv";
+            String fileName = "src/main/resources/example_data1.csv";
             Path myPath = Paths.get(fileName);
 
             try (BufferedReader br = Files.newBufferedReader(myPath,
@@ -45,7 +49,8 @@ public class FilmDatabase {
                 List<Film> films = csvToBean.parse();
 
                 for (Film film : films) {
-                    repository.save(new Film(film));
+                    log.info("Preloading " + repository.save(new Film(film)));
+                    // repository.save(new Film(film));
                 }
 
                 // films.forEach(System.out::println);
