@@ -26,7 +26,7 @@ public class FilmDatabase {
     // public static void main(String[] args) throws IOException { /*There should
     // only be one main method in tht application*/
 
-    private static final Logger log = LoggerFactory.getLogger(FilmDatabase.class);
+    // private static final Logger log = LoggerFactory.getLogger(FilmDatabase.class);
 
     @Bean
     CommandLineRunner initDatabase(FilmRepository repository) {
