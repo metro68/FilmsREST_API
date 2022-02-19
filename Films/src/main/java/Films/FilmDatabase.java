@@ -49,8 +49,8 @@ public class FilmDatabase {
                 List<Film> films = csvToBean.parse();
 
                 for (Film film : films) {
-                    log.info("Preloading " + repository.save(new Film(film)));
-                    // repository.save(new Film(film));
+                    // log.info("Preloading " + repository.save(new Film(film))); //Log useful with troubleshooting later on but adds time to running so commented out
+                     repository.save(new Film(film));
                 }
 
                 // films.forEach(System.out::println);

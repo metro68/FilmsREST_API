@@ -46,13 +46,19 @@ public class FilmController {
 
     // Returns all film records
     @GetMapping("/allFilms")
-    public CollectionModel<EntityModel<Film>> all() {
+    /*
+     * public List<Film> all() {
+     * return repository.findAll();
+     * }
+     */
 
+    public CollectionModel<EntityModel<Film>> all() {
         List<EntityModel<Film>> films = repository.findAll().stream()
                 .map(assembler::toModel)
                 .collect(Collectors.toList());
 
-        return CollectionModel.of(films, linkTo(methodOn(FilmController.class).all()).withSelfRel());
+        return CollectionModel.of(films,
+                linkTo(methodOn(FilmController.class).all()).withSelfRel());
     };
 
     // Returns all titles and IDs
